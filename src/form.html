@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="page__container">
+    <header class="page__header header">
+        <nav class="header__nav nav">
+            <div class="nav__menu menu">
+                <button class="menu__button"></button>
+                <ul class="menu__list--site">
+                    <li class="menu__item">
+                        <a href="http://" class="menu__item-link">Каталог товаров</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="http://" class="menu__item-link">Вязание на заказ</a>
+                    </li>
+                </ul>
+                <div class="menu__item--logo logo">
+                    <a href="http://" class="logo__link">
+                        <picture class="logo__img-optim">
+                            <img src="./images/logo.jpg" alt="" class="logo__image">
+                        </picture>
+                    </a>
+                </div>
+                <ul class="menu__list--user">
+                    <li class="menu__item">
+                        <a href="http://" class="menu__item-link">Поиск по сайту</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="http://" class="menu__item-link">Корзина: пока пуста</a>
+                    </li>
+                </ul>
+                <ul class="menu__list--extra">
+                    <li class="menu__item">
+                        <a href="http://" class="menu__item-link">Lorem, ipsum.</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="http://" class="menu__item-link">Voluptatibus, sequi.</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header__title-wrapper">
+            <h1 class="header__title">Вязание на заказ</h1>
+        </div>
+    </header>
+    <main class="page__content">
+        <section class="order">
+            <p class="order__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+            <form action="" class="order__form form">
+                <fieldset class="form__field field">
+                    <legend class="field__title">Тип</legend>
+                    <ul class="field__filter-list">
+                        <li class="field__filter-item filter">
+                            <label for="" class="filter__name">
+                                <input type="radio" name="" id="" class="filter__radio">
+                                Аксессуар для интерьера
+                            </label>
+                        </li>
+                        <li class="field__filter-item filter">
+                            <label for="" class="filter__name">
+                                <input type="radio" name="" id="" class="filter__radio">
+                                Детская игрушка
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__field field">
+                    <legend class="field__title">Цвет</legend>
+                    <ul class="field__filter-list">
+                        <li class="field__filter-item filter">
+                            <label for="" class="filter__name">
+                                <input type="checkbox" name="" id="" class="filter__checkbox">
+                                Белый
+                            </label>
+                        </li>
+                        <li class="field__filter-item filter">
+                            <label for="" class="filter__name">
+                                <input type="checkbox" name="" id="" class="filter__checkbox">
+                                Серый
+                            </label>
+                            </li>
+                        <li class="field__filter-item filter">
+                            <label for="" class="filter__name">
+                                <input type="checkbox" name="" id="" class="filter__checkbox">
+                                «Тиффани»
+                            </label>
+                        </li>
+                        <li class="field__filter-item filter">
+                            <label for="" class="filter__name">
+                                <input type="checkbox" name="" id="" class="filter__checkbox">
+                                Черный
+                            </label>
+                        </li>
+                        <li class="field__filter-item filter">
+                            <label for="" class="filter__name">
+                                <input type="checkbox" name="" id="" class="filter__checkbox">
+                                Розовый
+                            </label>
+                        </li>
+                        <li class="field__filter-item filter">
+                            <label for="" class="filter__name">
+                                <input type="checkbox" name="" id="" class="filter__checkbox">
+                                Оранжевый
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__field field">
+                    <legend class="field__title">ФИО</legend>
+                    <ul class="field__fullname">
+                        <li class="fullname__item">
+                            <label for="" class="fullname__item-name">
+                                Имя:
+                                <input type="text" name="" id="" class="fullname__input">
+                            </label>
+                        </li>
+                        <li class="fullname__item">
+                            <label for="" class="fullname__item-name">
+                                Фамилия:
+                                <input type="text" name="" id="" class="fullname__input">
+                            </label>
+                        </li>
+                        <li class="fullname__item">
+                            <label for="" class="fullname__item-name">
+                                Отчество:
+                                <input type="text" name="" id="" class="fullname__input">
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="form__field field">
+                    <legend class="field__title">Тел</legend>
+                    <label for="tel" class="fullname__item-name">Телефон</label>
+                    <input type="text" name="" id="tel" class="fullname__input">
+                </fieldset>
+                <fieldset class="form__field field">
+                    <legend class="field__title">E-mail</legend>
+                    <label for="email" class="fullname__item-name">Телефон</label>
+                    <input type="text" name="" id="email" class="fullname__input">
+                </fieldset>
+                <fieldset class="form__field field">
+                    <legend class="field__title">Доп</legend>
+                    <textarea class="field__text" name="" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+                    <p class="filed__footenote">*Поля обязательны для заполнения</p>
+                    <button class="order__button button">Отправить заказ</button>
+            </form>
+        </section>
+    </main>
+    <footer class="page__footer">
+        <div class="footer__wrapper">
+            <a href="http://" class="footer__logo logo">
+                <picture>
+                    <img src="" alt="" class="footer__logo-img">
+                </picture>
+            </a>
+            <ul class="social__list">
+                <li class="social__item social__item--">
+                    <a href="http://" class="social__item-link">
+                        <img src="" alt="" class="social__item-icon">
+                    </a>
+                </li>
+                <li class="social__item social__item--">
+                    <a href="http://" class="social__item-link">
+                        <img src="" alt="" class="social__item-icon">
+                    </a>
+                </li>
+                <li class="social__item social__item--">
+                    <a href="http://" class="social__item-link">
+                        <img src="" alt="" class="social__item-icon">
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <span>Разработано</span>
+                <a href="http://" class="copyright__logo-link">
+                    <img src="" alt="" class="copyright__logo-icon">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
