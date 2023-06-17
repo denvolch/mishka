@@ -1,0 +1,34 @@
+$parent: ".nav";
+$color_par: rgb(195, 0, 255);
+$color_lvl1: rgb(255, 0, 0);
+$color_lvl2: rgb(20, 170, 6);
+$color_lvl3: rgb(0, 140, 255);
+
+// #{$parent} {
+//     @include frame($color_par, 2px)
+// }
+// #{$parent}::before {
+//     @include frameLabel(auto,0,0,auto, $color_par, 20px)
+// }
+
+
+#{$parent $lvl_1} {
+    @include frame($color_lvl1, 2px)
+}
+#{$parent $lvl_1}::before {
+    @include frameLabel(auto,0,auto,auto, $color_lvl1)
+}
+
+#{$parent $lvl_2} {
+    @include frame($color_lvl2, 2px)
+}
+#{$parent $lvl_2}::before {
+    @include frameLabel(auto,auto,0,0, $color_lvl2)
+}
+
+// #{$parent $lvl_3} {
+//     @include frame($color_lvl3, 2px)
+// }
+// #{$parent $lvl_3}::before {
+//     @include frameLabel("","",0,0, $color_lvl3)
+// }

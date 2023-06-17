@@ -10,6 +10,7 @@
   "author": "Denis Volchkov",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.29.3",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-csso": "^4.0.1",

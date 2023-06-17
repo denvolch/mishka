@@ -1,4 +1,5 @@
 const { src, dest, watch, parallel, series } = require('gulp')
+const browserSync = require('browser-sync').create()
 const sass = require('gulp-sass')(require('sass'))
 const autoprefixer = require('gulp-autoprefixer')
 const sourcemaps = require('gulp-sourcemaps')
@@ -8,7 +9,12 @@ const rename = require('gulp-rename')
 const webp = require('gulp-webp')
 const csso = require('gulp-csso')
 
-function sassToCss() {
+
+const htmlOptim = () => {
+    return src('src/*.html')
+        .pipe(dest('dist/'))
+}
+const sassToCss = () => {
     return src('src/scss/style.scss')
         .pipe(sourcemaps.init())
         .pipe(sass())
@@ -18,6 +24,7 @@ function sassToCss() {
         .pipe(sourcemaps.write())
         .pipe(rename('style.min.css'))
         .pipe(dest('dist/css/'))
+        .pipe(browserSync.stream())
 }
 
 const imageOptimize = () => {
@@ -37,7 +44,7 @@ const imageOptimize = () => {
                 }
             ]})
         ]))
-        .pipe(dest('src/images/'))
+        .pipe(dest('dist/images/'))
 }
 
 const convertWebp = () => {
@@ -60,10 +67,15 @@ const imgHandling = async () => {
     return spriteCreate()
 }
 
+const serve = () => {
+    browserSync.init({
+        server: "./dist"
+    })
 
-function watchChanges() {
+    watch('src/*.html').on('change', browserSync.reload)
     watch('src/scss/**/*.scss', sassToCss)
 }
+
 exports.imgOptim = imgHandling
 
-exports.default = parallel(sassToCss, watchChanges)
+exports.default = parallel(htmlOptim, sassToCss, serve)
