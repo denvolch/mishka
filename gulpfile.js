@@ -3,7 +3,9 @@ const browserSync = require('browser-sync').create()
 const sass = require('gulp-sass')(require('sass'))
 const autoprefixer = require('gulp-autoprefixer')
 const sourcemaps = require('gulp-sourcemaps')
+const ttf2woff2 = require('gulp-ttf2woff2')
 const imagemin = require('gulp-imagemin')
+const fonter = require('gulp-fonter-fix')
 const sprite = require('gulp-svgstore')
 const rename = require('gulp-rename')
 const webp = require('gulp-webp')
@@ -25,6 +27,20 @@ const sassToCss = () => {
         .pipe(rename('style.min.css'))
         .pipe(dest('dist/css/'))
         .pipe(browserSync.stream())
+}
+
+const fontToTTF = () => {
+    return src('src/fonts/*.{otf, woff}')
+        .pipe(fonter({
+            formats: ['ttf']
+        }))
+        .pipe(dest('src/fonts/'))
+}
+
+const ttfToWoff2= () => {
+    return src('src/fonts/*.ttf')
+        .pipe(ttf2woff2())
+        .pipe(dest('dist/fonts'))
 }
 
 const imageOptimize = () => {
@@ -72,10 +88,11 @@ const serve = () => {
         server: "./dist"
     })
 
-    watch('src/*.html').on('change', browserSync.reload)
+    watch('src/*.html', htmlOptim).on('change', browserSync.reload)
     watch('src/scss/**/*.scss', sassToCss)
 }
 
+exports.fontsConvert = series(fontToTTF, ttfToWoff2)
 exports.imgOptim = imgHandling
 
 exports.default = parallel(htmlOptim, sassToCss, serve)

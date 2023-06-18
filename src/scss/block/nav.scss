@@ -1,7 +1,7 @@
-$parent: ".header";
+$parent: ".nav";
 $color_par: rgb(195, 0, 255);
-$color_lvl1: rgb(166, 255, 0);
-$color_lvl2: rgb(20, 170, 6);
+$color_lvl1: rgb(255, 0, 0);
+$color_lvl2: rgb(6, 44, 170);
 $color_lvl3: rgb(0, 140, 255);
 
 // #{$parent} {
@@ -12,12 +12,12 @@ $color_lvl3: rgb(0, 140, 255);
 // }
 
 
-#{$parent $lvl_1} {
-    @include frame($color_lvl1, 2px)
-}
-#{$parent $lvl_1}::before {
-    @include frameLabel(auto,0,auto,auto, $color_lvl1)
-}
+// #{$parent $lvl_1} {
+//     @include frame($color_lvl1, 2px)
+// }
+// #{$parent $lvl_1}::before {
+//     @include frameLabel(auto,0,auto,auto, $color_lvl1)
+// }
 
 // #{$parent $lvl_2} {
 //     @include frame($color_lvl2, 2px)
@@ -32,15 +32,3 @@ $color_lvl3: rgb(0, 140, 255);
 // #{$parent $lvl_3}::before {
 //     @include frameLabel("","",0,0, $color_lvl3)
 // }
-
-.header {
-    height: 884px;
-
-    &__nav {
-        height: 396px;
-    }
-
-    &__promo {
-        height: 488px;
-    }
-}

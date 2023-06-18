@@ -1,3 +1,31 @@
-@import "./GLOBAL.scss";
+@import "./global.scss";
 @import "./stylization-helper.scss";
+
 @import "./block/header.scss";
+@import "./block/menu.scss";
+@import "./block/nav.scss";
+
+
+@font-face {
+    font-family: 'Myriad Pro';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('./../fonts/MYRIADPRO-REGULAR.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('./../fonts/OpenSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+    src: url('./../fonts/OpenSans-Bold.woff2') format('woff2');
+}
