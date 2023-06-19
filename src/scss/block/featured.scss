@@ -1,0 +1,229 @@
+.featured {
+    position: relative;
+    padding: 0 30px;
+    padding-top: 26px;
+    padding-bottom: 42px;
+
+    font-family: 'Open Sans', Arial, sans-serif;
+
+    &__title-inner {
+        margin-bottom: 21px;
+    }
+
+    &__title {
+        margin-bottom: 6px;
+
+        font-size: 25px;
+        line-height: 30px;
+        font-weight: bold;
+    }
+
+    &__subtitle {
+        margin-left: -1px;
+
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #63d1bb;
+    }
+
+    &__description {
+        margin-bottom: 18px;
+
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    &__table {
+        width: 100%;
+        margin-bottom: 366px;
+
+        font-size: 15px;
+        line-height: 20px;
+
+        border: none;
+        border-collapse: collapse;
+
+        & td {
+            padding: 0;
+            padding-top: 9px;
+            padding-bottom: 10px;
+
+            border-bottom: 1px solid black;
+        }
+    }
+
+    &__table-key {
+        width: 97px;
+    }
+
+    &__price {
+        display: block;
+        margin-bottom: 27px;
+        margin-left: -3px;
+
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    &__photo-card {
+        position: absolute;
+        bottom: 165px;
+    }
+
+    &__photo-link {
+        display: block;
+        font-size: 0;
+    }
+
+    &__button {
+        width: 100%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        
+        width: 100%;
+        height: 6px;
+
+        background:
+            radial-gradient(4px 3px at 50% 100%, transparent 100%, #f1f1f1 100% 8px, transparent 52%) 50% 0/16px 100%,
+            radial-gradient(4px 3px at 50% 0   , transparent  100%, #f1f1f1 100% 8px,transparent 52%) calc(50% - 8px) 0/16px 100%
+        ;
+    }
+}
+
+@media (min-width: $tablet768) {
+    .featured {
+        padding: 0 50px;
+        padding-top: 44px;
+        padding-bottom: 69px;
+        // padding-left: 47px;
+
+        &__title-inner {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 43px;
+        }
+
+        &__title {
+            margin-left: -3px;
+            margin-bottom: 6px;
+
+            font-size: 43px;
+            line-height: 50px;
+        }
+
+        &__subtitle {
+            width: 120px;
+            padding-top: 12px;
+            margin-right: 4px;
+
+            text-align: center;
+            line-height: 17px;
+        }
+
+        &__inner {
+            display: flex;
+        }
+
+        &__column-left {
+            padding-right: 44px;
+        }
+
+        &__description {
+            margin-bottom: 37px;
+    
+            font-size: 17px;
+            line-height: 30px;
+        }
+
+        &__table {
+            margin-bottom: 56px;
+        }
+
+        &__price {
+            margin-bottom: 34px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+
+        &__photo-card {
+            position: static;
+            // padding-top: 9px;
+        }
+
+        &__photo-link {
+            padding-top: 9px;
+        }
+
+        &::after {
+            height: 18px;
+
+            background:
+                radial-gradient(9px 7px at 50% 100%, transparent 100%, #f1f1f1 100% 16px, transparent 52%) 50% -4px/38.5px 100% repeat-x,
+                radial-gradient(9px 7px at 50% 0   , transparent  100%, #f1f1f1 100% 16px,transparent 52%) calc(50% - 19.25px) 4px/38.5px 100% repeat-x;
+            ;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .featured {
+        padding: 0 100px;
+        padding-top: 62px;
+        padding-bottom: 96px;
+        
+        &__title-inner {
+            position: absolute;
+            top: 123px;
+
+            flex-direction: row-reverse;
+        }
+
+        &__title {
+            margin-left: 24px;
+
+            font-size: 53px;
+            line-height: 57px;
+        }
+
+        &__subtitle {
+            margin-top: 2px;
+            margin-left: 22px;
+        }
+
+        &__column-left {
+            padding-top: 166px;
+            padding-right: 58px;
+            padding-left: 175px;
+        }
+
+        &__description {
+            margin-bottom: 49px;
+        }
+
+        &__table {
+            margin-bottom: 109px;
+        }
+
+        &__price {
+            margin-bottom: 35px;
+        }
+
+        &::after {
+            height: 23px;
+
+            background:
+                radial-gradient(12px 11px at 50% 100%, transparent 100%, #f1f1f1 100% 21px, transparent 52%) 50% -4px/52.5px 100% repeat-x,
+                radial-gradient(12px 11px at 50% 0   , transparent  100%, #f1f1f1 100% 21px,transparent 52%) calc(50% - 26.25px) 4px/52.5px 100% repeat-x;
+            ;
+        }
+    }
+}

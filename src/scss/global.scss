@@ -38,3 +38,32 @@ h1, h2, h3, p {
 
     // visibility: hidden;
 }
+
+.button {
+    display: block;
+    padding: 14px 0;
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #444444;
+
+    border: 2px solid #444444;
+    background-color: transparent;
+    cursor: pointer;
+
+    & span {
+        display: block;
+    }
+
+    &:hover {
+        color: #ffffff;
+        background-color: #444444;
+    }
+
+    &:active span {
+        opacity: 0.3;
+    }
+}
