@@ -1,0 +1,193 @@
+.contacts {
+    position: relative;
+
+    padding: 30px;
+    padding-top: 35px;
+    padding-bottom: 44px;
+    // padding-left: 28px;
+
+    font-family: 'Open Sans', Arial, sans-serif;
+
+    &__title {
+        margin-left: -2px;
+
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    &__table {
+        margin-bottom: 532px;
+
+        font-size: 15px;
+        line-height: 30px;
+
+        border-collapse: collapse;
+
+        & td {
+            padding-top: 26px;
+        }
+    }
+
+    &__table-key {
+        padding-right: 30px;
+        padding-bottom: 4px;
+
+        vertical-align: top;
+    }
+
+    &__table-value span {
+        display: inline-block;
+    }
+
+    &__table-value--mail {
+        
+        & a {
+            display: inline-block;
+
+            text-decoration: none;
+            line-height: 25px;
+            color: black;
+
+            border-bottom: 1px solid #62d1ba;
+        }
+
+        &:hover a {
+            color: #62d1ba;
+        }
+
+        &:active a {
+            opacity: 0.3;
+        }
+    }
+
+    &__button {
+        width: 100%;
+    }
+
+    &__map-inner {
+        position: absolute;
+        bottom: 135px;
+        left: 0;
+
+        width: 100%;
+
+        img {
+            display: block;
+        }
+    }
+}
+
+
+@media (min-width: $tablet768) {
+    .contacts {
+        padding: 50px;
+        padding-top: 60px;
+        padding-bottom: 57px;
+
+        &__title {
+            margin-left: -5px;
+            margin-bottom: 23px;
+
+            font-size: 43px;
+            line-height: 50px;
+        }
+
+        &__table {
+            margin-bottom: 568px;
+    
+            font-size: 17px;
+
+            & tbody {
+                display: flex;
+            }
+
+            & tr:first-child {
+                margin-right: 50px;
+            }
+        }
+        
+        &__table-key {
+            padding-right: 22px;
+            padding-bottom: 4px;
+
+            vertical-align: top;
+        }
+
+        &__button {
+            width: 230px;
+            margin: 0 auto;
+        }
+        
+        &__map-inner {
+            bottom: 164px;
+        }
+
+        &::before {
+            content: "";
+
+            position: absolute;
+            top: 46px;
+            right: 53px;
+
+            width: 47px;
+            height: 81px;
+
+            background-image: url('../../images/svg/flag.svg');
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .contacts {
+        margin: 0 100px;
+        padding: 0;
+        padding-top: 71px;
+        padding-bottom: 105px;
+
+        &__title {
+            position: absolute;
+            top: 141px;
+            left: 175px;
+
+            font-size: 53px;
+            line-height: 57px;
+        }
+
+        &__wrapper {
+            display: flex;
+        }
+
+        &__column-left {
+            padding-top: 149px;
+            padding-left: 175px;
+            padding-right: 46px;
+        }
+
+        &__table {
+            margin-bottom: 79px;
+
+            & tbody {
+                display: initial;
+            }
+
+            & tr:first-child {
+                margin-right: 0;
+            }
+        }
+
+        &__button {
+            width: 230px;
+            margin-left: 0;
+        }
+
+        &__map-inner {
+            position: static;
+        }
+
+        &::before {
+            top: 133px;
+            right: auto;
+            left: 63px;
+        }
+    }
+}
