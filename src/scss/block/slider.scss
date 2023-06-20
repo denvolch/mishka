@@ -1,0 +1,52 @@
+.slider {
+    &__list {
+        margin-bottom: 30px;
+    }
+
+    &__controls {
+        display: flex;
+        width: 260px;
+        margin: 0 auto;
+    }
+
+    &__button {
+        display: block;
+        width: 50%;
+        padding-top: 12px;
+        padding-bottom: 9px;
+        padding-left: 38px;
+        padding-right: 40px;
+
+        border: 1px solid black;
+        background-color: transparent;
+
+        &--next {
+            margin-left: -1px;
+        }
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+}
+
+@media (min-width: $tablet768)  {
+    .slider {
+        &__list {
+            margin-bottom: 0;
+        }
+
+        &__controls {
+            width: 175px;
+        }
+
+        &__button {
+            padding: 19px;
+            border: none;
+        }
+    }
+}

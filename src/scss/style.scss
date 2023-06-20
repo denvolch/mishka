@@ -1,8 +1,11 @@
 @import "./global.scss";
+@import "./mixins.scss";
 @import "./stylization-helper.scss";
 
 @import "./block/featured.scss";
 @import "./block/aboutus.scss";
+@import "./block/review.scss";
+@import "./block/slider.scss";
 @import "./block/header.scss";
 @import "./block/promo.scss";
 @import "./block/menu.scss";

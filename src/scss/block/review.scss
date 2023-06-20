@@ -1,0 +1,138 @@
+.review {
+    position: relative;
+
+    padding: 0 30px;
+    padding-top: 25px;
+    padding-bottom: 51px;
+
+    font-family: 'Open Sans', Arial, sans-serif;
+
+    &__title {
+        margin-bottom: 22px;
+        margin-left: -2px;
+
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    &__slider {
+        margin-bottom: 38px;
+    }
+
+    &__text {
+        margin-bottom: 26px;
+
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    &__author {
+        margin-bottom: 3px;
+
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: bold;
+    }
+
+    &__author-mail {
+        display: inline-block;
+
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    &__button {
+        width: 100%;
+    }
+
+    &::after {
+        @include zigzag
+    }
+}
+
+@media (min-width: $tablet768) {
+    .review {
+        padding: 0 50px;
+        padding-top: 102px;
+        padding-bottom: 132px;
+
+        background-image: url('../../images/review.webp');
+        background-repeat: no-repeat;
+        background-position: 0 27px;
+
+        &__title {
+            margin-bottom: 50px;
+            margin-left: -4px;
+
+            font-size: 43px;
+            line-height: 50px;
+        }
+
+        &__slider {
+            margin-bottom: 0;
+        }
+
+        &__text {
+            margin-bottom: 58px;
+            font-size: 17px;
+            line-height: 30px;
+        }
+
+        &__author {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        .slider__controls {
+            position: absolute;
+            right: 50px;
+            bottom: 126px;
+        }
+
+        &__button {
+            position: absolute;
+            top: 106px;
+            right: 50px;
+
+            width: 175px;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .review {
+        padding-top: 103px;
+        padding-right: 100px;
+        padding-left: 275px;
+        padding-bottom: 186px;
+
+        
+        background-position: 100px 33px;
+        
+        &__title {
+            margin-bottom: 48px;
+
+            font-size: 53px;
+            line-height: 57px;
+        }
+
+        &__text {
+            margin-right: 80px;
+            margin-bottom: 39px;
+        }
+
+        &__author {
+            font-size: 17px;
+        }
+        
+        .slider__controls {
+            right: 100px;
+            bottom: 179px;
+        }
+
+        &__button {
+            top: 112px;
+            right: 100px;
+        }
+    }
+}

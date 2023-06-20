@@ -1,0 +1,33 @@
+@mixin zigzag {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 6px;
+
+    background:
+        radial-gradient(4px 3px at 50% 100%, transparent 100%, #f1f1f1 100% 8px, transparent 52%) 50% 0/16px 100%,
+        radial-gradient(4px 3px at 50% 0   , transparent  100%, #f1f1f1 100% 8px,transparent 52%) calc(50% - 8px) 0/16px 100%
+    ;
+
+    @media (min-width: $tablet768) {
+        height: 18px;
+
+        background:
+            radial-gradient(9px 7px at 50% 100%, transparent 100%, #f1f1f1 100% 16px, transparent 52%) 50% -4px/38.5px 100% repeat-x,
+            radial-gradient(9px 7px at 50% 0   , transparent  100%, #f1f1f1 100% 16px,transparent 52%) calc(50% - 19.25px) 4px/38.5px 100% repeat-x;
+        ;
+    }
+
+    @media (min-width: $desktop) {
+        height: 23px;
+
+        background:
+            radial-gradient(12px 11px at 50% 100%, transparent 100%, #f1f1f1 100% 21px, transparent 52%) 50% -4px/52.5px 100% repeat-x,
+            radial-gradient(12px 11px at 50% 0   , transparent  100%, #f1f1f1 100% 21px,transparent 52%) calc(50% - 26.25px) 4px/52.5px 100% repeat-x;
+        ;
+    }
+}
