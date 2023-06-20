@@ -1,0 +1,45 @@
+.footer {
+    background-color: #f1f1f1;
+
+    &__wrapper {
+        margin: 0 30px;
+    }
+    
+    &__logo {
+        display: none;
+    }
+}
+
+@media (min-width: $tablet768) {
+    .footer {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin: 0 50px;
+            padding: 31px 0;
+            padding-bottom: 32px;
+        }
+
+        &__logo {
+            display: block;
+
+            &:hover {
+                opacity: 0.6;
+            }
+
+            &:active {
+                opacity: 0.3;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .footer {
+        &__wrapper {
+            margin: 0 100px;
+        }
+    }
+}

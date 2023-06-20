@@ -1,0 +1,41 @@
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 52px;
+    padding-bottom: 17px;
+
+    font-size: 0;
+
+    &__item {
+        &:hover svg {
+            fill: #62d1ba;
+        }
+
+        &:active svg {
+            opacity: 0.3;
+        }
+    }
+
+    &__item--insta {
+        margin-left: -5px;
+    }
+
+    &__link {
+        display: block;
+        padding: 10px;
+        font-size: 0;
+    }
+}
+
+@media (min-width: $tablet768) {
+    .socials {
+        width: 156px;
+        margin-left: 83px;
+
+        padding: 14px 0;
+        padding-top: 18px;
+    }
+    
+}
