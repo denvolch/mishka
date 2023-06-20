@@ -6,15 +6,15 @@ $desktop: 1250px;
     margin: 0;
     padding: 0;
 
-    background-image: url('../mishka-index-mobile--full.jpg');
+    // background-image: url('../mishka-index-mobile--full.jpg');
     background-position: center top;
     background-repeat: no-repeat;
 
     @media (min-width: 768px) {
-        background-image: url('../mishka-index-tablet.jpg');
+        // background-image: url('../mishka-index-tablet.jpg');
     }
     @media (min-width: 1250px) {
-        background-image: url('../mishka-index-desktop.jpg');
+        // background-image: url('../mishka-index-desktop.jpg');
     }
 }
 
