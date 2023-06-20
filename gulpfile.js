@@ -74,7 +74,8 @@ const spriteCreate = () => {
     console.log('sprite start')
     return src('src/images/**/icon-*.svg')
         .pipe(sprite())
-        .pipe(dest('dist/images/'))
+        // .pipe(rename('sprites.svg'))
+        .pipe(dest('dist/images/svg/'))
 }
 
 const imgHandling = async () => {

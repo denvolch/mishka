@@ -1,0 +1,111 @@
+.aboutus {
+    padding-top: 27px;
+    margin: 0 30px;
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: bold;
+
+    &__title {
+        margin-bottom: 31px;
+
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    &__item {
+        position: relative;
+        padding-top: 54px;
+        padding-bottom: 29px;
+
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    &__item-text span {
+        display: block;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0;
+
+        fill: #63d1bb;
+    }
+
+    .icon-flower {
+        left: 8px;
+    }
+
+    .icon-dollar {
+        top: 2px;
+    }
+
+    .icon-heart {
+        top: 7px;
+        left: 7px;
+    }
+
+    .icon-clew {
+        top: 4px;
+        left: 4px;
+    }
+
+    .icon-rocket {
+        top: 5px;
+        left: -6px;
+    }
+
+    .icon-gift {
+        top: 3px;
+        left: 3px;
+    }
+}
+
+@media (min-width: $tablet768) {
+    .aboutus {
+        padding-top: 48px;
+        margin: 0 50px;
+
+        &__title {
+            margin-left: -5px;
+            margin-bottom: 49px;
+
+            font-size: 43px;
+            line-height: 50px;
+        }
+
+        &__list-inner {
+            display: flex;
+        }
+
+        &__column {
+            width: 50%;
+        }
+
+        &__item {
+            // padding-top: ;
+            padding-bottom: 57px;
+
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .aboutus {
+        padding-top: 59px;
+        margin: 0 100px;
+
+        &__title {
+            margin-left: 171px;
+
+            font-size: 53px;
+            line-height: 57px;
+        }
+
+        &__list-inner {
+            padding: 0 175px;
+        }
+    }
+}
