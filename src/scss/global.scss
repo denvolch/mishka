@@ -7,14 +7,17 @@ $desktop: 1250px;
     padding: 0;
 
     // background-image: url('../mishka-index-mobile--full.jpg');
+    // background-image: url('../mishka-catalog-mobile.jpg');
     background-position: center top;
     background-repeat: no-repeat;
 
     @media (min-width: 768px) {
         // background-image: url('../mishka-index-tablet.jpg');
+        background-image: url('../mishka-catalog-tablet.jpg');
     }
     @media (min-width: 1250px) {
         // background-image: url('../mishka-index-desktop.jpg');
+        background-image: url('../mishka-catalog-desktop.jpg');
     }
 }
 
@@ -28,6 +31,10 @@ h1, h2, h3, p {
     margin: 0;
 }
 
+img {
+    line-height: 0;
+}
+
 .visual-hidden {
     position: absolute;
 
@@ -39,11 +46,28 @@ h1, h2, h3, p {
     // visibility: hidden;
 }
 
+.title {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: bold;
+
+    @media (min-width: $tablet768) {
+        font-size: 43px;
+        line-height: 50px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 53px;
+        line-height: 57px;
+    }
+}
+
 .button {
     display: block;
     padding: 14px 0;
 
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 17px;
     line-height: 20px;
     font-weight: bold;
