@@ -10,7 +10,21 @@
         padding-bottom: 32px;
 
         border: 1px solid #ececec;
+
+        &:hover {
+            box-shadow: 0 8px 14px 2px #e8e8e8;
+        }
+
+        &:active {
+            box-shadow: 0 3px 6px 1px #e8e8e8;
+        }
+
+        &:hover &__title,
+        &:hover &__text {
+            opacity: 0.6;
+        }
     }
+
 
     &__title {
         position: relative;
@@ -62,6 +76,16 @@
 
             width: calc(101px * 1.2);
             height: calc(77px * 1.2);
+        }
+
+        &:active::before {
+            top: 40px;
+            left: calc(50% - 50px);
+
+            width: 101px;
+            height: 77px;
+
+            // filter: opacity(0.3);
         }
     }
 
