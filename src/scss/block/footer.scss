@@ -25,9 +25,8 @@
         &__logo {
             display: block;
 
-            &:hover {
+            &:hover svg {
                 fill: #46c1ae;
-                opacity: 0.6;
             }
 
             &:active {

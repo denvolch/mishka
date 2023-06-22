@@ -9,7 +9,7 @@
         padding-top: 23px;
         padding-bottom: 32px;
 
-        border: 1px solid black;
+        border: 1px solid #ececec;
     }
 
     &__title {
@@ -51,7 +51,17 @@
             height: 77px;
 
             background-image: url('./../../images/svg/play.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
             cursor: pointer;
+        }
+
+        &:hover::before {
+            top: 30px;
+            left: calc(50% - 60px);
+
+            width: calc(101px * 1.2);
+            height: calc(77px * 1.2);
         }
     }
 
@@ -110,6 +120,10 @@
             &::before {
                 top: 200px;
             }
+
+            &:hover::before {
+                top: 190px;
+            }
         }
 
         &__column-right {
@@ -135,7 +149,7 @@
         position: relative;
 
         margin: 0 100px;
-        padding-top: 53px;
+        padding-top: 55px;
         padding-bottom: 58px;
 
         &__wrapper {
@@ -172,7 +186,7 @@
         }
 
         &__column-right {
-            padding-top: 179px;
+            padding-top: 177px;
             padding-left: 80px;
             padding-right: 57px;
         }
