@@ -326,28 +326,32 @@
             </div>
         </div>
     </footer>
-
-    <form action="" class="modal">
-        <h2 class="modal__title title">Добавить в корзину</h2>
-        <p class="modal_descr">Выберите размер:</p>
-        <ul class="modal__list">
-            <li class="modal__item">
-                <input: class="modal__checkbox" name="size-S" id="s"></input:>
-                <label for="s" class="modal__label--">S</label>
-            </li>
-            <li class="modal__item">
-                <input: class="modal__checkbox" name="size-M" id="m"></input:>
-                <label for="m" class="modal__label--">M</label>
-            </li>
-            <li class="modal__item">
-                <input: class="modal__checkbox" name="size-L" id="l"></input:>
-                <label for="l" class="modal__label--">L</label>
-            </li>
-        </ul>
-        <button class="modal__button button">
-            <span>Добавить</span>
-        </button>
-    </form>
+    <div class="modal--opened">
+        <div action="" class="modal__wrapper">
+            <button class="modal__close-btn">Закрыть</button>
+            <h2 class="modal__title title">Добавить в корзину</h2>
+            <p class="modal__descr">Выберите размер:</p>
+            <div class="modal__footer">
+                <ul class="modal__list">
+                    <li class="modal__item">
+                        <input class="modal__checkbox" type="checkbox" name="size-S" id="s">
+                        <label for="s" class="modal__label modal__label--s">S</label>
+                    </li>
+                    <li class="modal__item">
+                        <input class="modal__checkbox" type="checkbox" name="size-M" id="m">
+                        <label for="m" class="modal__label modal__label--m">M</label>
+                    </li>
+                    <li class="modal__item">
+                        <input class="modal__checkbox" type="checkbox" name="size-L" id="l">
+                        <label for="l" class="modal__label modal__label--l">L</label>
+                    </li>
+                </ul>
+                <button class="modal__button button">
+                    <span>Добавить</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script>
         const toggleBtn = document.querySelector('.menu__toggle')
