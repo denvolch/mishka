@@ -1,0 +1,455 @@
+.field {
+    margin: 0;
+    padding: 0;
+    padding-top: 24px;
+    padding-bottom: 31px;
+
+    border: none;
+    border-top: 1px solid #444444;
+
+    &__item:not(:last-child) {
+        margin-bottom: 22px;
+    }
+
+    &__title {
+        position: relative;
+        top: -1px;
+
+        min-width: 42px;
+        margin-left: -28px;
+        padding-left: 27px;
+        padding-right: 20px;
+
+        font-size: 17px;
+        line-height: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #63d1ba;
+    }
+
+    &__label {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+
+        font-size: 17px;
+        line-height: 17px;
+        font-weight: bold;
+
+        span {
+            display: block;
+            width: 160px;
+            padding-left: 22px;
+        }
+    }
+
+//:::::::::TYPE::::::::::
+    &__radio,
+    &__checkbox {
+        display: none;
+    }
+
+    &--type &__label,
+    &--color &__label {
+        &::before {
+            content: "";
+
+            display: block;
+            width: 35px;
+            height: 35px;
+
+            border: 2px solid #444444;
+        }
+
+        &::after {
+            content: "";
+            
+            position: absolute;
+            top: calc(50% - 8px);
+            left: 12px;
+
+            display: none;
+        }
+    }
+
+    &--type &__label::before,
+    &--type &__label::after {
+        border-radius: 50%;
+    }
+
+    &--type &__label::after {
+        width: 15px;
+        height: 15px;
+
+        background-color: #63d1ba;
+    }
+
+    &__radio:checked + &__label::after {
+        display: block;
+    }
+
+//:::::::::COLOR::::::::::::
+    &--color &__label {
+
+        & span::before,
+        & span::after {
+            content: "";
+            position: absolute;
+
+            display: none;
+            height: 2px;
+
+            background-color: #444444;
+        }
+
+        & span::before {
+            top: 23px;
+            left: 8px;
+
+            width: 10px;
+
+            transform: rotate(45deg);
+        }
+
+        & span::after {
+            top: 19px;
+            left: 13px;
+
+            width: 20px;
+            transform: rotate(-45deg);
+        }
+    }
+
+    &__checkbox:checked + &__label span::after,
+    &__checkbox:checked + &__label span::before {
+        display: block;
+    }
+
+//::::::::::FULLNAME:::::::::::
+    &--fullname &__label {
+        display: block;
+        margin-top: 5px;
+    }
+
+    &__input {
+        display: block;
+        width: 100%;
+        padding: 0;
+
+        font-size: 18px;
+        line-height: 51px;
+
+        border: none;
+        border-bottom: 2px solid black;
+        background-color: transparent;
+
+        &:placeholder-shown {
+            color: #444444;
+            opacity: 0.3;
+        }
+
+        &:focus {
+            color: #444444;
+        }
+    }
+
+//::::::::TEL EMAIL:::::::::
+    &--tel,
+    &--email {
+        position: relative;
+        padding-top: 6px;
+    }
+
+    &--tel &__label,
+    &--email &__label {
+        display: none;
+    }
+    
+    &--tel &__input,
+    &--email &__input {
+        width: calc(100% - 36px);
+        padding-right: 36px;
+    }
+
+    &--tel .icon-tel::after,
+    &--email .icon-email::after {
+        position: absolute;
+        content: "";
+
+        display: block;
+        opacity: 0.2;
+    }
+
+    .icon-tel::after {
+        top: 17px;
+        right: 8px;
+        
+        width: 25px;
+        height: 24px;
+
+        background-image: url('../../images/svg/tel.svg');
+    }
+
+    .icon-email::after {
+        top: 22px;
+        right: 4px;
+        
+        width: 32px;
+        height: 21px;
+
+        background-image: url('../../images/svg/mail.svg');
+    }
+
+    &__input:hover + .icon-tel::after,
+    &__input:focus + .icon-tel::after {
+        background-image: url('../../images/svg/tel--hover.svg');
+        opacity: 1;
+    }
+
+    &__input:hover + .icon-email::after,
+    &__input:focus + .icon-email::after {
+        background-image: url('../../images/svg/mail--hover.svg');
+        opacity: 1;
+    }
+
+    &__input:hover,
+    &__input:focus {
+        border-bottom: 2px solid #62d1ba;
+    }
+
+//::::::::ADDITION::::::::::
+    &--addition {
+        padding-bottom: 16px;
+    }
+
+    &--addition &__textarea {
+        width: calc(100% - 32px);
+        margin: 0;
+        padding: 14px;
+        padding-bottom: 38px;
+
+        font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+        font-size: 17px;
+        line-height: 17px;
+        color: #c1c1c1;
+
+        border: 2px solid #444444;
+        background-color: transparent;
+
+        &:focus {
+            color: #444444;
+        }
+    }
+
+    &__textarea:hover,
+    &__textarea:focus {
+        border-color: #62d1ba;
+    }
+}
+
+@media (min-width: $tablet768) {
+    .field {
+        position: relative;
+        padding: 50px;
+        padding-left: 217px;
+    
+        border: none;
+    
+        &__item:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    
+        &__title {
+            position: absolute;
+            top: 67px;
+            left: 52px;
+        }
+    
+        &__label {
+            font-size: 19px;
+            line-height: 19px;
+    
+            span {
+                width: auto;
+                padding-left: 28px;
+            }
+        }
+
+//::::::::: TABLET  TYPE::::::::::
+        &--type &__label {
+            &::before {
+                width: 48px;
+                height: 48px;
+            }
+    
+            &::after {
+                top: calc(50% - 11px);
+                left: 15px;
+            }
+        }
+    
+        &--type &__label::after {
+            width: 22px;
+            height: 22px;
+        }
+
+//::::::::: TABLET  COLOR::::::::::::
+        &--color {
+            padding-right: 0;
+
+            background-color: #f1f1f1;
+        }
+
+        &--color &__list {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 24px;
+        }
+
+        &--color &__item {
+            margin-bottom: 0;
+        }
+
+        &--color &__item {
+            width: calc(50% - 14px);
+        }
+
+        &--color &__label {
+            &::before {
+                width: 50px;
+                height: 48px;
+            }
+
+            & span::before {
+                top: 30px;
+
+                width: 18px;
+            }
+
+            & span::after {
+                top: 26px;
+                left: 18px;
+
+                width: 30px;
+            }
+        }
+
+//:::::::::: TABLET  FULLNAME:::::::::::
+        &--fullname {
+            padding-bottom: 48px;
+        }
+
+        &--fullname &__item {
+            display: flex;
+            align-items: center;
+        }
+
+        &--fullname &__label {
+            margin-top: 0;
+        }
+
+        &--fullname &__input {
+            flex-grow: 1;
+            width: auto;
+            margin-left: 25px;
+        }
+
+        &__input {
+            padding: 0 18px;
+
+            font-size: 19px;
+        }
+
+
+//:::::::: TABLET  TEL EMAIL:::::::::
+        &--tel,
+        &--email {
+            background-color: #f1f1f1;
+        }
+
+        &--tel {
+            padding-top: 49px;
+            padding-bottom: 23px;
+        }
+
+        &--email {
+            padding-top: 0;
+        }
+
+        &--email &__title {
+            top: 16px;
+        }
+        
+        &--tel &__input,
+        &--email &__input {
+            box-sizing: border-box;
+            width: 100%;
+        }
+
+        .icon-tel::after {
+            top: 61px;
+            right: 76px;
+        }
+
+        .icon-email::after {
+            top: 16px;
+            right: 72px;
+        }
+
+//:::::::: TABLET  ADDITION::::::::::
+        &--addition &__text {
+            padding-bottom: 29px;
+
+            font-size: 19px;
+            line-height: 19px;
+        }
+    }
+}
+
+@media (min-width: $desktop) {
+    .field {
+        padding-left: 275px;
+        padding-right: 275px;
+    
+        border: none;
+
+        &__title {
+            top: 67px;
+            left: 163px;
+        }
+
+//::::::::: DESKTOP  COLOR::::::::::::
+        &--color {
+            padding-right: 185px;
+        }
+
+        &--color &__item {
+            width: 33.3%;
+        }
+
+//:::::::::: DESKTOP  FULLNAME:::::::::::
+        &--fullname {
+            padding-top: 49px;
+            padding-bottom: 49px;
+        }
+
+//:::::::: DESKTOP  TEL EMAIL:::::::::
+        .icon-tel::after {
+            right: 283px;
+        }
+
+        .icon-email::after {
+            right: 279px;
+        }
+
+//:::::::: DESKTOP  ADDITION::::::::::
+        &--addition {
+            padding-bottom: 45px;
+        }
+
+        &--addition &__text {
+            padding-bottom: 28px;
+        }
+    }
+}
