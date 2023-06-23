@@ -327,6 +327,28 @@
         </div>
     </footer>
 
+    <form action="" class="modal">
+        <h2 class="modal__title title">Добавить в корзину</h2>
+        <p class="modal_descr">Выберите размер:</p>
+        <ul class="modal__list">
+            <li class="modal__item">
+                <input: class="modal__checkbox" name="size-S" id="s"></input:>
+                <label for="s" class="modal__label--">S</label>
+            </li>
+            <li class="modal__item">
+                <input: class="modal__checkbox" name="size-M" id="m"></input:>
+                <label for="m" class="modal__label--">M</label>
+            </li>
+            <li class="modal__item">
+                <input: class="modal__checkbox" name="size-L" id="l"></input:>
+                <label for="l" class="modal__label--">L</label>
+            </li>
+        </ul>
+        <button class="modal__button button">
+            <span>Добавить</span>
+        </button>
+    </form>
+
     <script>
         const toggleBtn = document.querySelector('.menu__toggle')
         const menu = document.querySelector('.menu')
