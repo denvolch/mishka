@@ -1,6 +1,6 @@
 .featured {
     position: relative;
-    padding: 0 30px;
+    padding: 0 calc(30px / 320px) * 100%;
     padding-top: 26px;
     padding-bottom: 42px;
 
@@ -71,6 +71,7 @@
 
     &__photo-card {
         position: absolute;
+        left: calc(50% - 130px);
         bottom: 165px;
     }
 
@@ -81,6 +82,8 @@
 
     &__button {
         width: 100%;
+        max-width: 292px;
+        margin: 0 auto;
     }
 
     &::after {
@@ -94,17 +97,18 @@
 
         background:
             radial-gradient(4px 3px at 50% 100%, transparent 100%, #f1f1f1 100% 8px, transparent 52%) 50% 0/16px 100%,
-            radial-gradient(4px 3px at 50% 0   , transparent  100%, #f1f1f1 100% 8px,transparent 52%) calc(50% - 8px) 0/16px 100%
+            radial-gradient(4px 3px at 50% 0   , transparent 100%, #f1f1f1 100% 8px,transparent 52%) calc(50% - 8px) 0/16px 100%
         ;
     }
 }
 
-@media (min-width: $tablet768) {
+@media (min-width: $mediaTablet) {
     .featured {
-        padding: 0 50px;
+        max-width: 1050px;
+        margin: 0 auto;
+        padding: 0 (calc(50px / 768px) * 100%);
         padding-top: 44px;
         padding-bottom: 69px;
-        // padding-left: 47px;
 
         &__title-inner {
             display: flex;
@@ -134,6 +138,8 @@
         }
 
         &__column-left {
+            display: flex;
+            flex-direction: column;
             padding-right: 44px;
         }
 
@@ -145,6 +151,7 @@
         }
 
         &__table {
+            margin-top: auto;
             margin-bottom: 56px;
         }
 
@@ -168,21 +175,24 @@
 
             background:
                 radial-gradient(9px 7px at 50% 100%, transparent 100%, #f1f1f1 100% 16px, transparent 52%) 50% -4px/38.5px 100% repeat-x,
-                radial-gradient(9px 7px at 50% 0   , transparent  100%, #f1f1f1 100% 16px,transparent 52%) calc(50% - 19.25px) 4px/38.5px 100% repeat-x;
+                radial-gradient(9px 7px at 50% 0   , transparent 100%, #f1f1f1 100% 16px,transparent 52%) calc(50% - 19.25px) 4px/38.5px 100% repeat-x;
             ;
         }
     }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $mediaDesktop) {
     .featured {
-        padding: 0 100px;
+        padding: 0 8%;
         padding-top: 62px;
         padding-bottom: 96px;
         
         &__title-inner {
             position: absolute;
             top: 123px;
+            left: calc(50% - 525px);
+
+            max-width: none;
 
             flex-direction: row-reverse;
         }
@@ -197,6 +207,10 @@
         &__subtitle {
             margin-top: 2px;
             margin-left: 22px;
+        }
+
+        &__inner {
+            max-width: $centererTablet;
         }
 
         &__column-left {

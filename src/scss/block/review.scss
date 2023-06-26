@@ -1,11 +1,16 @@
 .review {
     position: relative;
+    
+    &__wrapper {
+        position: relative;
 
-    padding: 0 30px;
-    padding-top: 25px;
-    padding-bottom: 51px;
+        box-sizing: border-box;
+        padding: 0 (calc(30px / 320px) * 100%);
+        padding-top: 25px;
+        padding-bottom: 51px;
 
-    font-family: 'Open Sans', Arial, sans-serif;
+        font-family: 'Open Sans', Arial, sans-serif;
+    }
 
     &__title {
         margin-bottom: 22px;
@@ -42,7 +47,8 @@
     }
 
     &__button {
-        width: 100%;
+        width: 260px;
+        margin: 0 auto;
     }
 
     &::after {
@@ -50,15 +56,19 @@
     }
 }
 
-@media (min-width: $tablet768) {
+@media (min-width: $mediaTablet) {
     .review {
-        padding: 0 50px;
-        padding-top: 102px;
-        padding-bottom: 132px;
+        &__wrapper {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 0 (calc(50px / 768px) * 100%);
+            padding-top: 102px;
+            padding-bottom: 132px;
 
-        background-image: url('../../images/review.webp');
-        background-repeat: no-repeat;
-        background-position: 0 27px;
+            background-image: url('../../images/review.webp');
+            background-repeat: no-repeat;
+            background-position: 0 27px;
+        }
 
         &__title {
             margin-bottom: 50px;
@@ -99,15 +109,17 @@
     }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $mediaDesktop) {
     .review {
-        padding-top: 103px;
-        padding-right: 100px;
-        padding-left: 275px;
-        padding-bottom: 186px;
-
-        
-        background-position: 100px 33px;
+        &__wrapper {
+            max-width: 1250px;
+            padding-top: 103px;
+            padding-right: 100px;
+            padding-left: 275px;
+            padding-bottom: 186px;
+            
+            background-position: 100px 33px;
+        }
         
         &__title {
             margin-bottom: 48px;

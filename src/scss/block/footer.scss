@@ -2,7 +2,8 @@
     background-color: #f1f1f1;
 
     &__wrapper {
-        margin: 0 30px;
+        width: 81.25vw;
+        margin: 0 auto;
     }
     
     &__logo {
@@ -10,14 +11,15 @@
     }
 }
 
-@media (min-width: $tablet768) {
+@media (min-width: $mediaTablet) {
     .footer {
         &__wrapper {
             display: flex;
             justify-content: space-between;
             align-items: center;
 
-            margin: 0 50px;
+            
+            width: 86.97vw;
             padding: 31px 0;
             padding-bottom: 32px;
         }
@@ -36,10 +38,10 @@
     }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $mediaDesktop) {
     .footer {
         &__wrapper {
-            margin: 0 100px;
+            max-width: 1050px;
         }
     }
 }

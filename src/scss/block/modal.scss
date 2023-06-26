@@ -149,7 +149,7 @@
     }
 }
 
-@media (min-width: $tablet768) {
+@media (min-width: $mediaTablet) {
     .modal--opened.modal {
         &__title {
             width: auto;

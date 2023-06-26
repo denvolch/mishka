@@ -1,13 +1,18 @@
 .cards {
     &__list-wrapper {
-        margin: 0 30px;
+        // width: 260px;
+        margin: 0 calc(30px / 320px) * 100%;
         padding-top: 30px;
     }
     
     &__list {
         display: grid;
         grid-column-gap: 30px;
-        grid-template-columns: repeat(auto-fit, 260px);
+        justify-content: center;
+
+        @media (max-width: 638px) {
+            grid-template-columns: repeat(auto-fit, 260px);
+        }
     }
 
     &__item {
@@ -49,6 +54,9 @@
 
 
     &__item-link {
+        display: flex;
+        flex-wrap: wrap;
+
         text-decoration: none;
         color: inherit;
     }
@@ -59,6 +67,8 @@
     }
 
     &__item-inner {
+        box-sizing: border-box;
+        width: 260px;
         padding: 0 27px;
         padding-top: 25px;
 
@@ -104,11 +114,10 @@
     }
 }
 
-@media (min-width: $tablet768) {
+@media (min-width: $mediaTablet) {
     .cards {
         &__list-wrapper {
-            margin: 0 50px;
-            margin-left: 51px;
+            margin: 0 calc(50px / 768px) * 100%;
             padding-top: 80px;
         }
 
@@ -117,6 +126,8 @@
         }
 
         &__item {
+            max-width: 1050px;
+            margin: 0 auto;
 
             &:not(:last-child) {
                 margin-bottom: 54px;
@@ -174,7 +185,7 @@
     }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $mediaDesktop) {
     .cards {
         &__list-wrapper {
             margin: 0 100px;
@@ -185,6 +196,8 @@
             display: grid;
             grid-gap: 50px;
             grid-template-columns: repeat(auto-fit, 316px);
+            grid-template-rows: repeat(auto-fit, 659px);
+            
         }
 
         &__item:not(:last-child) {
@@ -193,20 +206,20 @@
 
         &__item-link {
             flex-direction: column;
+            justify-content: space-between;
+            align-items: stretch;
         }
 
         &__item-inner {
-            min-height: 172px;
+            width: auto;
+            min-height: 197px;
             padding-left: 26px;
 
             border-left: 1px solid #ececec;
         }
 
-        &__name {
-        }
-
         &__stats {
-            margin-bottom: 0;
+            margin-bottom: 14px;
         }
 
         &__footer {

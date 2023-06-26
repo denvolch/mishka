@@ -44,6 +44,10 @@
         }
     }
 
+    &__wrapper {
+        position: relative;
+    }
+
 //:::::::::TYPE::::::::::
     &__radio,
     &__checkbox {
@@ -60,6 +64,15 @@
             height: 35px;
 
             border: 2px solid #444444;
+        }
+
+        &:hover::before {
+            border-color: #63d1ba;
+        }
+
+        &:active::before {
+            border-color: #444444;
+            opacity: 0.3;
         }
 
         &::after {
@@ -224,8 +237,10 @@
     }
 
     &--addition &__textarea {
-        width: calc(100% - 32px);
-        margin: 0;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
         padding: 14px;
         padding-bottom: 38px;
 
@@ -248,7 +263,7 @@
     }
 }
 
-@media (min-width: $tablet768) {
+@media (min-width: $mediaTablet) {
     .field {
         position: relative;
         padding: 50px;
@@ -263,7 +278,13 @@
         &__title {
             position: absolute;
             top: 67px;
-            left: 52px;
+            left: calc(52px / 768px) * 100%;
+        }
+
+        &__list,
+        &__wrapper {
+            max-width: 700px;
+            margin: 0 auto;
         }
     
         &__label {
@@ -294,7 +315,7 @@
             height: 22px;
         }
 
-//::::::::: TABLET  COLOR::::::::::::
+//::::::::: TABLET  COLOR:::::::::::
         &--color {
             padding-right: 0;
 
@@ -365,7 +386,7 @@
 //:::::::: TABLET  TEL EMAIL:::::::::
         &--tel,
         &--email {
-            background-color: #f1f1f1;
+            // background-color: #f1f1f1;
         }
 
         &--tel {
@@ -388,17 +409,18 @@
         }
 
         .icon-tel::after {
-            top: 61px;
-            right: 76px;
+            top: 12px;
+            right: 25px;
         }
 
         .icon-email::after {
-            top: 16px;
-            right: 72px;
+            top: 17px;
+            right: 22px;
         }
 
 //:::::::: TABLET  ADDITION::::::::::
-        &--addition &__text {
+        &--addition &__textarea {
+            max-width: 700px;
             padding-bottom: 29px;
 
             font-size: 19px;
@@ -407,23 +429,19 @@
     }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $mediaDesktop) {
     .field {
-        padding-left: 275px;
-        padding-right: 275px;
+        padding-left: calc(275px / 1250px) * 100%;
+        padding-right: calc(275px / 1250px) * 100%;
     
         border: none;
 
         &__title {
             top: 67px;
-            left: 163px;
+            left: calc(50% - 462px);
         }
 
 //::::::::: DESKTOP  COLOR::::::::::::
-        &--color {
-            padding-right: 185px;
-        }
-
         &--color &__item {
             width: 33.3%;
         }
@@ -436,11 +454,11 @@
 
 //:::::::: DESKTOP  TEL EMAIL:::::::::
         .icon-tel::after {
-            right: 283px;
+            right: 8px;
         }
 
         .icon-email::after {
-            right: 279px;
+            right: 4px;
         }
 
 //:::::::: DESKTOP  ADDITION::::::::::
@@ -448,7 +466,7 @@
             padding-bottom: 45px;
         }
 
-        &--addition &__text {
+        &--addition &__textarea {
             padding-bottom: 28px;
         }
     }

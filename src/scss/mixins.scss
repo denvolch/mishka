@@ -13,7 +13,7 @@
         radial-gradient(4px 3px at 50% 0   , transparent  100%, #f1f1f1 100% 8px,transparent 52%) calc(50% - 8px) 0/16px 100%
     ;
 
-    @media (min-width: $tablet768) {
+    @media (min-width: $mediaTablet) {
         height: 18px;
 
         background:
@@ -22,7 +22,7 @@
         ;
     }
 
-    @media (min-width: $desktop) {
+    @media (min-width: $mediaDesktop) {
         height: 23px;
 
         background:

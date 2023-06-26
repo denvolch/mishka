@@ -31,14 +31,14 @@
                         <span>Каталог товаров</span>
                     </a>
                 </li>
-                <li class="#">
-                    <a href="http://" class="menu__link">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
                         <span>Вязание на заказ</span>
                     </a>
                 </li>
             </ul>
             <div class="menu__item menu__item--logo">
-                <a href="index.html" class="menu__link">
+                <a href="/" class="menu__link">
                     <picture>
                         <source media="(min-width: 1250px)" srcset="images/svg/mishka-logo-desktop.svg" width="149">
                         <source media="(min-width: 768px)" srcset="images/svg/mishka-logo-tablet.svg" width="113">
@@ -56,7 +56,7 @@
                     </a>
                 </li>
                 <li class="menu__item menu__item--cart">
-                    <a href="http://" class="menu__link">
+                    <a href="#" class="menu__link">
                         <svg class="menu__cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 13" width="21" height="18">
                             <path d="M13.5 5h-2.2L9 .3c-.2-.3-.5-.4-.7-.2a.4.4 0 00-.3.6L10.1 5H3.8L6 .7a.4.4 0 00-.3-.6c-.2-.2-.5-.1-.7.2L2.7 5H.5a.5.5 0 00-.5.5.5.5 0 00.5.5h.1l.6 2.1a.5.5 0 00-.2.4.5.5 0 00.5.5l1.1 4h8.8l1.1-4a.5.5 0 00.5-.5.5.5 0 00-.2-.4l.6-2.1h.1a.5.5 0 00.5-.5.5.5 0 00-.5-.5zm-2.9 7H3.4l-.8-3h8.8zm1.1-4H2.3l-.6-2h10.6z"/>
                         </svg>
@@ -66,12 +66,12 @@
             </ul>
             <ul class="menu__list menu__list--extra">
                 <li class="menu__item">
-                    <a href="http://" class="menu__link">
+                    <a href="#" class="menu__link">
                         <span>Новые поступления</span>
                     </a>
                 </li>
                 <li class="menu__item">
-                    <a href="http://" class="menu__link">
+                    <a href="#" class="menu__link">
                         <span>Распродажа</span>
                     </a>
                 </li>
@@ -167,15 +167,19 @@
             </fieldset>
             <fieldset class="form__field field field--tel">
                 <legend class="field__title">Тел</legend>
-                <label for="tel" class="field__label">Телефон</label>
-                <input type="tel" name="" id="tel" class="field__input" placeholder="+7 ХХХ ХХ ХХ*">
-                <i class="icon-tel"></i>
+                <div class="field__wrapper">
+                    <label for="tel" class="field__label">Телефон</label>
+                    <input type="tel" name="" id="tel" class="field__input" placeholder="+7 ХХХ ХХ ХХ*">
+                    <i class="icon-tel"></i>
+                </div>
             </fieldset>
             <fieldset class="form__field field field--email">
                 <legend class="field__title">E-mail</legend>
-                <label for="email" class="field__label">E-mail</label>
-                <input type="email" name="" id="email" class="field__input" placeholder="Ваш Email*">
-                <i class="icon-email"></i>
+                <div class="field__wrapper">
+                    <label for="email" class="field__label">E-mail</label>
+                    <input type="email" name="" id="email" class="field__input" placeholder="Ваш Email*">
+                    <i class="icon-email"></i>
+                </div>
             </fieldset>
             <fieldset class="form__field field field--addition">
                 <legend class="field__title">Доп</legend>
@@ -191,28 +195,28 @@
     </main>
     <footer class="page__footer footer">
         <div class="footer__wrapper">
-            <a href="http://" class="footer__logo logo">
+            <a href="#" class="footer__logo logo">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 17" width="102" height="34">
                     <path d="M9.5 14.4c.5 1.2 0 2.8-1.5 2.5s-.5-.4-.2-.7c-.5-2.2-.1-4.6-.4-6.9a29.8 29.8 0 00-1.1 4c.4 1-2.7 1.7-2 .4s-1.5-3.2-2.1-4.9c-.4 1.8 1.7 8.6-1.5 7.4-.4-.2-.6-.6-.3-.9.2-3.9-.8-7.9-.2-11.6.4-.7 2.1-.8 2 0s1.8 4.6 3 6.7A36.1 36.1 0 007.1 4c-.5-1 2.7-1.7 2-.5.5 3.6.2 7.3.4 10.9zm4.3-3.3a34.5 34.5 0 01-.5-6.4c-.1-.4-2.1.1-2 .5 0 3.7.8 7.5.6 11.1.1.5 1.7 0 1.9-.4s-.3-3.2 0-4.8zM22 9.4c-3.2-2.5-5.2 2.3-5.2-4.5-.1-.6.1-1.5.8-1.6s2.9-.2 2.6 1.2 1.8.2 1.9-.4c.6-3-7.4-1.9-7.3.7s-.4 5.3 4.3 4.7c1.9.2 1.3 2.8 1.3 4s.6 1.7.2 2.2-1 .4-1.5.4c-2.1.5-1.4-1.7-1.4-2.9s-2-.1-2 .5-.7 3.1 1.2 3.3 6.6-.3 5.7-3.1.3-3.2-.6-4.5zm8.7-.1c-.1-1.9-.4-3.7-.4-5.6s-2-.7-2 .2.3 3.6.4 5.4l-3 .2c.2-2.3-.3-4.6-.2-7-3.6-1-1.2 5.3-1.7 7.3s.1 4.3.1 6.5c-.1.3 1.8.1 2-.4s-.6-3.7-.2-5.5a10.7 10.7 0 013.1 0c0 1.8.5 3.7.1 5.5s1.6.9 1.9.2c.6-2.2-.1-4.5-.1-6.8zm8.5 2.3c-.5-1.4-1.2-2.6-1.8-3.9 1.1-1.8 1.5-4 3-5.5s.3-.5-.1-.5c-2.9.1-3.3 3.8-4.6 5.8-.2.1-.4.4-.3.6a17.1 17.1 0 01-1.3 2.3c-.1-2.8-.5-5.5-.6-8.3 0-.6-2-.2-1.9.5.1 3.5.6 6.9.6 10.3-.1.2-.1.3 0 .4s-.7 3.1.5 3.1 1.3-2.4 1.5-3.8a11 11 0 002-2.8c1 2 1.8 4.2 2.6 6.3s2.3.4 2-.5-1.1-2.7-1.6-4zm10.7-1.5c-.3 1.8 1.4 5.5-1.3 6 0 0-1 0-.7-.2s-.1-3.9 0-5.7c-1.3.4-2.8-.3-4.1 0 .1 1.8 0 3.6 0 5.4s-2 .8-2 .5c.3-3.2-.4-6.6-.2-9.8s3.7-3.5 6.1-3.6 1.8 4.2 2.2 6.2c1.4-.3 1.5 1.1 0 1.2zm-2.8-.9h.8c-.4-1.7.4-4-.6-5.4-3.9-1.2-4.1 2.7-3.6 5.5a12.9 12.9 0 013.4-.1zM12 3.4c1.9-.3 1-1.6 1.1-2.8s-1.9-.6-2 .2v1.5c0 .1-.1.3.1.4s.4.7.8.7z"/>
                 </svg>
             </a>
             <ul class="socials">
                 <li class="socials__item socials__item--insta">
-                    <a href="http://" class="socials__link" aria-label="Instagram">
+                    <a href="#" class="socials__link" aria-label="Instagram">
                         <svg class="socials__icon socials__icon--insta" width="22" height="21">
                             <use xlink:href="#icon-insta"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="socials__item socials__item--facebook">
-                    <a href="http://" class="socials__link" aria-label="Facebook">
+                    <a href="#" class="socials__link" aria-label="Facebook">
                         <svg class="socials__icon socials__icon--facebook" width="15" height="28">
                             <use xlink:href="#icon-facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="socials__item socials__item--twitter">
-                    <a href="http://" class="socials__link" aria-label="Twitter">
+                    <a href="#" class="socials__link" aria-label="Twitter">
                         <svg class="socials__icon socials__icon--twitter" width="23" height="20">
                             <use xlink:href="#icon-twitter"></use>
                         </svg>
@@ -220,7 +224,7 @@
                 </li>
             </ul>
             <div class="copyright">
-                <a href="http://" class="copyright__link">
+                <a href="#" class="copyright__link">
                     <span>Разработано</span>
                     <svg class="copyright__icon" width="27" height="34">
                         <use xlink:href="#icon-htmlacademy"></use>

@@ -23,12 +23,12 @@
     }
 }
 
-@media (min-width: $tablet768) {
+@media (min-width: $mediaTablet) {
     .form {
         margin: 0;
         
         &__descr {
-            margin: 0 50px;
+            margin: 0 (calc(50px / 768px) * 100%);
             padding-top: 71px;
             padding-bottom: 7px;
     
@@ -52,24 +52,28 @@
         &__footer {
             display: flex;
             justify-content: space-between;
-            margin: 0 50px;
+            
+            min-width: 668px;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 0 calc(50px / 768px) * 100%;
             padding-top: 4px;
         }
     }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $mediaDesktop) {
     .form {
         padding-bottom: 50px;
 
         &__descr {
-            margin: 0 275px;
+            max-width: 1050px;
+            margin: 0 auto;
             padding-top: 120px;
-            // padding-bottom: 8px;
         }
 
         &__footer {
-            margin: 0 275px;
+            margin: 0 auto;
         }
     }
 }

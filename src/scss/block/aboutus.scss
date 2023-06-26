@@ -1,8 +1,9 @@
 .aboutus {
+    box-sizing: border-box;
     padding-top: 27px;
-    margin: 0 30px;
+    margin: 0 calc(30px / 320px) * 100%;
 
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: bold;
 
     &__title {
@@ -61,10 +62,12 @@
     }
 }
 
-@media (min-width: $tablet768) {
+@media (min-width: $mediaTablet) {
     .aboutus {
+        max-width: 1050px;
+        margin: 0 auto;
+        padding: 0 (calc(50px / 768px) * 100%);
         padding-top: 48px;
-        margin: 0 50px;
 
         &__title {
             margin-left: -5px;
@@ -92,20 +95,14 @@
     }
 }
 
-@media (min-width: $desktop) {
+@media (min-width: $mediaDesktop) {
     .aboutus {
+        padding: 0 175px;
         padding-top: 59px;
-        margin: 0 100px;
 
         &__title {
-            margin-left: 171px;
-
             font-size: 53px;
             line-height: 57px;
-        }
-
-        &__list-inner {
-            padding: 0 175px;
         }
     }
 }

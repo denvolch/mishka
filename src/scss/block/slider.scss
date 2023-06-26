@@ -17,7 +17,7 @@
         padding-left: 38px;
         padding-right: 40px;
 
-        border: 1px solid black;
+        border: 1px solid #ececec;
         background-color: transparent;
 
         &--next {
@@ -34,7 +34,7 @@
     }
 }
 
-@media (min-width: $tablet768)  {
+@media (min-width: $mediaTablet)  {
     .slider {
         &__list {
             margin-bottom: 0;

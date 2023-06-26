@@ -1,5 +1,9 @@
-$tablet768: 768px;
-$desktop: 1250px;
+$mediaTablet: 768px;
+$mediaDesktop: 1250px;
+
+$centererMobile: 668px;
+$centererTablet: 1050px;
+$centererDesktop: 1250px;
 
 
 .page__container {
@@ -55,12 +59,12 @@ img {
     line-height: 30px;
     font-weight: bold;
 
-    @media (min-width: $tablet768) {
+    @media (min-width: $mediaTablet) {
         font-size: 43px;
         line-height: 50px;
     }
 
-    @media (min-width: $desktop) {
+    @media (min-width: $mediaDesktop) {
         font-size: 53px;
         line-height: 57px;
     }

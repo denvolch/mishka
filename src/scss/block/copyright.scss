@@ -1,4 +1,7 @@
 .copyright {
+    width: 260px;
+    margin: 0 auto;
+
     font-size: 0;
 
     border-top: 1px solid #e5e5e5;
@@ -38,8 +41,10 @@
     }
 }
 
-@media (min-width: $tablet768) {
+@media (min-width: $mediaTablet) {
     .copyright {
+        width: auto;
+        margin: 0;
         border-top: 0;
 
         &__link {
