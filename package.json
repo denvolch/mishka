@@ -6,7 +6,8 @@
   "scripts": {
     "gulp": "gulp",
     "imgoptim": "gulp imgOptim",
-    "fonts": "gulp fontsConvert"
+    "fonts": "gulp fontsConvert",
+    "stylelint": "npx stylelint \"**/*.css\""
   },
   "author": "Denis Volchkov",
   "license": "ISC",
@@ -23,6 +24,10 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-webp": "^3.0.0",
-    "sass": "^1.63.3"
+    "sass": "^1.63.3",
+    "stylelint": "^15.9.0",
+    "stylelint-config-recess-order": "^4.2.0",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "stylelint-order": "^6.0.3"
   }
 }
