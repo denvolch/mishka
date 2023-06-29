@@ -210,21 +210,34 @@
             </div>
         </div>
     </footer>
+    <div class="modal modal--closed">
+        <div class="modal__wrapper">
+            <button class="modal__close-btn">Закрыть</button>
+            <h2 class="modal__title title">Добавить в корзину</h2>
+            <p class="modal__descr">Выберите размер:</p>
+            <div class="modal__footer">
+                <ul class="modal__list">
+                    <li class="modal__item">
+                        <input class="modal__checkbox" type="checkbox" name="size-S" id="s">
+                        <label for="s" class="modal__label modal__label--s">S</label>
+                    </li>
+                    <li class="modal__item">
+                        <input class="modal__checkbox" type="checkbox" name="size-M" id="m">
+                        <label for="m" class="modal__label modal__label--m">M</label>
+                    </li>
+                    <li class="modal__item">
+                        <input class="modal__checkbox" type="checkbox" name="size-L" id="l">
+                        <label for="l" class="modal__label modal__label--l">L</label>
+                    </li>
+                </ul>
+                <button class="modal__button button">
+                    <span>Добавить</span>
+                </button>
+            </div>
+        </div>
+    </div>
 
-    <script>
-        const toggleBtn = document.querySelector('.menu__toggle')
-        const menu = document.querySelector('.menu')
-
-        toggleBtn.addEventListener('click', () => {
-            if (menu.classList.contains('menu--closed')) {
-                menu.classList.remove('menu--closed')
-                menu.classList.add('menu--opened')
-            } 
-            else {
-                menu.classList.remove('menu--opened')
-                menu.classList.add('menu--closed')
-            }
-        })
-    </script>
+    <script defer src="./js/burgerToggle.js"></script>
+    <script defer src="./js/modalToggle.js"></script>
 </body>
 </html>

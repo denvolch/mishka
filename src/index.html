@@ -329,8 +329,8 @@
             </div>
         </div>
     </footer>
-    <div class="modal--opened">
-        <div action="" class="modal__wrapper">
+    <div class="modal modal--closed">
+        <div class="modal__wrapper">
             <button class="modal__close-btn">Закрыть</button>
             <h2 class="modal__title title">Добавить в корзину</h2>
             <p class="modal__descr">Выберите размер:</p>
@@ -356,20 +356,7 @@
         </div>
     </div>
 
-    <script>
-        const toggleBtn = document.querySelector('.menu__toggle')
-        const menu = document.querySelector('.menu')
-
-        toggleBtn.addEventListener('click', () => {
-            if (menu.classList.contains('menu--closed')) {
-                menu.classList.remove('menu--closed')
-                menu.classList.add('menu--opened')
-            } 
-            else {
-                menu.classList.remove('menu--opened')
-                menu.classList.add('menu--closed')
-            }
-        })
-    </script>
+    <script defer src="./js/burgerToggle.js"></script>
+    <script defer src="./js/modalToggle.js"></script>
 </body>
 </html>
