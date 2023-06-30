@@ -201,7 +201,7 @@
         width: 25px;
         height: 24px;
 
-        background-image: url('../../images/svg/tel.svg');
+        background-image: url('../images/svg/tel.svg');
     }
 
     .icon-email::after {
@@ -211,18 +211,18 @@
         width: 32px;
         height: 21px;
 
-        background-image: url('../../images/svg/mail.svg');
+        background-image: url('../images/svg/mail.svg');
     }
 
     &__input:hover + .icon-tel::after,
     &__input:focus + .icon-tel::after {
-        background-image: url('../../images/svg/tel--hover.svg');
+        background-image: url('../images/svg/tel--hover.svg');
         opacity: 1;
     }
 
     &__input:hover + .icon-email::after,
     &__input:focus + .icon-email::after {
-        background-image: url('../../images/svg/mail--hover.svg');
+        background-image: url('../images/svg/mail--hover.svg');
         opacity: 1;
     }
 
@@ -386,7 +386,7 @@
 //:::::::: TABLET  TEL EMAIL:::::::::
         &--tel,
         &--email {
-            // background-color: #f1f1f1;
+            background-color: #f1f1f1;
         }
 
         &--tel {

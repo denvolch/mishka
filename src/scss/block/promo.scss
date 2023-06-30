@@ -1,5 +1,5 @@
 .promo {
-    background-image: url('./../../images/hero-mobile.webp');
+    background-image: url('../images/hero-mobile.webp');
     background-position: center -18px;
     background-repeat: no-repeat;
     background-color: #f9f9f9;
@@ -82,7 +82,7 @@
     .promo {
         position: relative;
 
-        background-image: url('./../../images/hero-desktop.webp');
+        background-image: url('../images/hero-desktop.webp');
         background-position: center 0;
 
         &__wrapper {
