@@ -30,7 +30,7 @@ const build = series(
 exports.build = build
 exports.watch = watchDev
 
-exports.default = series(
+exports.default = parallel(
     jsMin,
     optimHtml,
     scssToCss,

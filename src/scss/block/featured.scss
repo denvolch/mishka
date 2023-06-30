@@ -1,10 +1,13 @@
 .featured {
     position: relative;
-    padding: 0 calc(30px / 320px) * 100%;
-    padding-top: 26px;
-    padding-bottom: 42px;
+    
+    &__wrapper {
+        padding: 0 calc(30px / 320px) * 100%;
+        padding-top: 26px;
+        padding-bottom: 42px;
 
-    font-family: 'Open Sans', Arial, sans-serif;
+        font-family: 'Open Sans', Arial, sans-serif;
+    }
 
     &__title-inner {
         margin-bottom: 21px;
@@ -104,11 +107,13 @@
 
 @media (min-width: $mediaTablet) {
     .featured {
-        max-width: 1050px;
-        margin: 0 auto;
-        padding: 0 (calc(50px / 768px) * 100%);
-        padding-top: 44px;
-        padding-bottom: 69px;
+        &__wrapper {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 0 (calc(50px / 768px) * 100%);
+            padding-top: 44px;
+            padding-bottom: 69px;
+        }
 
         &__title-inner {
             display: flex;
@@ -183,9 +188,11 @@
 
 @media (min-width: $mediaDesktop) {
     .featured {
-        padding: 0 8%;
-        padding-top: 62px;
-        padding-bottom: 96px;
+        &__wrapper {
+            padding: 0 (calc(100px / 1250px) * 100%);
+            padding-top: 62px;
+            padding-bottom: 96px;
+        }
         
         &__title-inner {
             position: absolute;
