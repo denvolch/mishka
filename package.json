@@ -7,7 +7,7 @@
     "gulp": "gulp",
     "build": "gulp build",
     "watch": "gulp watch",
-    "stylelint": "npx stylelint \"**/*.css\""
+    "styelint": "npx stylelint \"**/*.scss\""
   },
   "author": "Denis Volchkov",
   "license": "ISC",
@@ -26,6 +26,8 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
-    "sass": "^1.63.6"
+    "sass": "^1.63.6",
+    "stylelint": "^15.9.0",
+    "stylelint-config-standard-scss": "^10.0.0"
   }
 }
