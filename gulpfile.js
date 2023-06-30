@@ -12,9 +12,9 @@ const { watch, series, parallel } = require('gulp')
 const watchDev = () => {
     server()
 
-    watch('src/images/**/*.{jpg,jpeg,png,svg,gif}', optimImages).on('change', browserSync.reload)
-    watch('src/*.html', optimHtml).on('change', browserSync.reload)
-    watch('src/js/*.js', jsMin).on('change', browserSync.reload)
+    watch('src/images/**/*.{jpg,jpeg,png,svg,gif}', optimImages)
+    watch('src/*.html', optimHtml)
+    watch('src/js/*.js', jsMin)
     watch('src/scss/**/*.scss', scssToCss)
 }
 

@@ -19,7 +19,7 @@ const scssToCss = () => {
             suffix: '.min',
             extname: '.css'
         }))
-        .pipe(sourceMaps.write())
+        .pipe(sourceMaps.write('.'))
         .pipe(dest('dist/css/'))
         .pipe(browserSync.stream())
 }
