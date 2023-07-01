@@ -2,7 +2,6 @@
 /dist
 /svg_source
 
-
 package-lock.json
 *.ai
 stylization-helper.scss
