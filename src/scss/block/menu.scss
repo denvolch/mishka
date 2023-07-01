@@ -1,9 +1,10 @@
 $menu_borders: 1px solid #ececec;
-$menu_icon-color: rgb(31, 31 ,31);
+$menu_icon-color: rgb(31 31 31);
 $menu_icon-color--hover: #63d1bb;
 
 .menu {
     position: relative;
+
 //::::::: grid :::::::::
     display: flex;
     flex-direction: column;
@@ -194,6 +195,7 @@ $menu_icon-color--hover: #63d1bb;
         &__list--user {
             order: -1;
             width: calc(398px / $mediaTablet) * 100%;
+
             // flex-grow: 1;
         }
 
@@ -208,6 +210,7 @@ $menu_icon-color--hover: #63d1bb;
 
         &__item--logo {
             width: calc(370px / $mediaTablet) * 100%;
+
             // width: 370px;
 
             border-top: none;
@@ -219,12 +222,14 @@ $menu_icon-color--hover: #63d1bb;
             display: inherit;
             margin-left: auto;
             margin-right: calc(50px / $mediaTablet) * 100%;
+
             // margin-right: 50px;
             padding-top: 19px;
 
             font-size: 15px;
-            color: #444444;
+            color: #444;
         }
+
 //:::::::: design :::::::::
         &__list--user &__item {
             border-left: $menu_borders;
@@ -244,6 +249,7 @@ $menu_icon-color--hover: #63d1bb;
             padding-top: 30px;
             padding-bottom: 34px;
             padding-left: calc(31px / 314px) * 100%;
+
             // padding-left: 31px;
         }
 
@@ -254,6 +260,7 @@ $menu_icon-color--hover: #63d1bb;
         &__item--logo &__link {
             padding-bottom: 20px;
             padding-left: calc(48px / 370px) * 100%;
+
             // padding-left: 48px;
 
             text-align: left;
@@ -261,12 +268,14 @@ $menu_icon-color--hover: #63d1bb;
 
         &__list--site {
             margin-left: calc(50px / $mediaDesktop) * 100%;
+
             // margin-left: 50px;
         }
         
         &__list--site &__item {
             border-bottom: none;
         }
+
         &__list--site &__link {
             padding: 17px 0;
             padding-right: 37px;
@@ -350,6 +359,7 @@ $menu_icon-color--hover: #63d1bb;
 
         &::after {
             margin-right: calc(100px / 1250px) * 100%;
+
             // margin-right: 100px;
         }
     }

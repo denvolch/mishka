@@ -27,8 +27,8 @@
                 height: 15px;
     
                 background:
-                    radial-gradient(11px at 50% 15px, rgba(255, 255, 255, 1) 100%, transparent 105%) calc(50% - 19px) 0/38.5px 100%,
-                    radial-gradient(13px at 50% -6px, transparent 108%, rgba(255, 255, 255, 1) 100%) 50% 6px/38.5px 100% repeat-x
+                    radial-gradient(11px at 50% 15px, rgb(255 255 255 / 100%) 100%, transparent 105%) calc(50% - 19px) 0/38.5px 100%,
+                    radial-gradient(13px at 50% -6px, transparent 108%, rgb(255 255 255 / 100%) 100%) 50% 6px/38.5px 100% repeat-x
                 ;
             }
         }
@@ -42,14 +42,13 @@
 
 @media (min-width: $mediaDesktop) {
     .header {
-
         &__title-wrapper {
             &::after {
                 height: 20px;
 
                 background:
-                    radial-gradient(21px at 50% 102%, rgba(255, 255, 255, 1) 100%, transparent 100%) calc(50% - 31.5px) 0/63px 100%,
-                    radial-gradient(21px at 50% -10.5px, transparent 100%, rgba(255, 255, 255, 1) 100%) 50% 4px/63px 100% repeat-x
+                    radial-gradient(21px at 50% 102%, rgb(255 255 255 / 100%) 100%, transparent 100%) calc(50% - 31.5px) 0/63px 100%,
+                    radial-gradient(21px at 50% -10.5px, transparent 100%, rgb(255 255 255 / 100%) 100%) 50% 4px/63px 100% repeat-x
                 ;
             }
         }

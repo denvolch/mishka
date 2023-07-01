@@ -5,7 +5,7 @@
     padding-bottom: 31px;
 
     border: none;
-    border-top: 1px solid #444444;
+    border-top: 1px solid #444;
 
     &__item:not(:last-child) {
         margin-bottom: 22px;
@@ -63,7 +63,7 @@
             width: 35px;
             height: 35px;
 
-            border: 2px solid #444444;
+            border: 2px solid #444;
         }
 
         &:hover::before {
@@ -71,7 +71,7 @@
         }
 
         &:active::before {
-            border-color: #444444;
+            border-color: #444;
             opacity: 0.3;
         }
 
@@ -104,7 +104,6 @@
 
 //:::::::::COLOR::::::::::::
     &--color &__label {
-
         & span::before,
         & span::after {
             content: "";
@@ -113,7 +112,7 @@
             display: none;
             height: 2px;
 
-            background-color: #444444;
+            background-color: #444;
         }
 
         & span::before {
@@ -158,12 +157,12 @@
         background-color: transparent;
 
         &:placeholder-shown {
-            color: #444444;
+            color: #444;
             opacity: 0.3;
         }
 
         &:focus {
-            color: #444444;
+            color: #444;
         }
     }
 
@@ -249,11 +248,11 @@
         line-height: 17px;
         color: #c1c1c1;
 
-        border: 2px solid #444444;
+        border: 2px solid #444;
         background-color: transparent;
 
         &:focus {
-            color: #444444;
+            color: #444;
         }
     }
 

@@ -1,6 +1,5 @@
 $mediaTablet: 768px;
 $mediaDesktop: 1250px;
-
 $centererMobile: 668px;
 $centererTablet: 1050px;
 $centererDesktop: 1250px;
@@ -21,6 +20,7 @@ $centererDesktop: 1250px;
         // background-image: url('../mishka-catalog-tablet.jpg');
         // background-image: url('../mishka-form-tablet.jpg');
     }
+
     @media (min-width: 1250px) {
         // background-image: url('../mishka-index-desktop.jpg');
         // background-image: url('../mishka-catalog-desktop.jpg');
@@ -79,9 +79,9 @@ img {
     line-height: 20px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #444444;
+    color: #444;
 
-    border: 2px solid #444444;
+    border: 2px solid #444;
     background-color: transparent;
     cursor: pointer;
 
@@ -90,8 +90,8 @@ img {
     }
 
     &:hover {
-        color: #ffffff;
-        background-color: #444444;
+        color: #fff;
+        background-color: #444;
     }
 
     &:active span {

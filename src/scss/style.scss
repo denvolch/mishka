@@ -1,23 +1,22 @@
-@import "./global.scss";
-@import "./mixins.scss";
-@import "./stylization-helper.scss";
-
-@import "./block/copyright.scss";
-@import "./block/featured.scss";
-@import "./block/contacts.scss";
-@import "./block/aboutus.scss";
-@import "./block/socials.scss";
-@import "./block/footer.scss";
-@import "./block/review.scss";
-@import "./block/slider.scss";
-@import "./block/header.scss";
-@import "./block/promo.scss";
-@import "./block/video.scss";
-@import "./block/cards.scss";
-@import "./block/field.scss";
-@import "./block/modal.scss";
-@import "./block/menu.scss";
-@import "./block/form.scss";
+@import "./global";
+@import "./mixins";
+@import "./stylization-helper";
+@import "./block/copyright";
+@import "./block/featured";
+@import "./block/contacts";
+@import "./block/aboutus";
+@import "./block/socials";
+@import "./block/footer";
+@import "./block/review";
+@import "./block/slider";
+@import "./block/header";
+@import "./block/promo";
+@import "./block/video";
+@import "./block/cards";
+@import "./block/field";
+@import "./block/modal";
+@import "./block/menu";
+@import "./block/form";
 
 
 @font-face {
