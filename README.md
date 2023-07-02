@@ -19,8 +19,8 @@
   
 + [<span style="color: #63d1bb">Сайт</span>](md#Сайт)
 + [<span style="color: #63d1bb">Задачи</span>](#Задачи)
-+ [<span style="color: #63d1bb">Технлогии и инструменты</span>](#технологии)
-+ [<span style="color: #63d1bb">Как использовать</span>](#Как использовать)
++ [<span style="color: #63d1bb">Технлогии и инструменты</span>](#Технологии_и_инструменты)
++ [<span style="color: #63d1bb">Как использовать</span>](#Как_использовать)
 + [<span style="color: #63d1bb">контакты</span>](#контакты)
 + [<span style="color: #63d1bb">Лицензия</span>](#Лицензия)
 + [<span style="color: #63d1bb">Источники</span>](#Источники)
