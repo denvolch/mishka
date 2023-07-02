@@ -17,22 +17,22 @@
 
 ## <span style="color: #63d1bb">Содержание</span>
   
-+ [<span style="color: #63d1bb">Сайт</span>](md#Сайт)
-+ [<span style="color: #63d1bb">Задачи</span>](#Задачи)
++ [<span style="color: #63d1bb">Сайт</span>](#site)
++ [<span style="color: #63d1bb">Задачи</span>](#tasks)
 + [<span style="color: #63d1bb">Технологии и инструменты</span>](#tech)
 + [<span style="color: #63d1bb">Как использовать</span>](#start)
-+ [<span style="color: #63d1bb">контакты</span>](#контакты)
-+ [<span style="color: #63d1bb">Лицензия</span>](#Лицензия)
-+ [<span style="color: #63d1bb">Источники</span>](#Источники)
++ [<span style="color: #63d1bb">контакты</span>](#contacts)
++ [<span style="color: #63d1bb">Лицензия</span>](#licence)
++ [<span style="color: #63d1bb">Источники</span>](#source)
 </br>
 
 
-### <span style="color: #63d1bb">Сайт</span>
+### <span id="site" style="color: #63d1bb">Сайт</span>
 Выможете подробнее ознакомиться с сайтом, перейдя по ссылке <a href="https://denvolch.github.io/mishka/" title="https://denvolch.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="https://denvolch.github.io/mishka/images/svg/mishka-logo-mobile--dark.svg" width="50"><img src="https://denvolch.github.io/mishka/images/svg/mishka-logo-mobile.svg" width="50"></picture></a>
 </br>
 
 
-### <span style="color: #63d1bb">Задачи</span>
+### <span id="tasks" style="color: #63d1bb">Задачи</span>
  - [x] Соотвествие требованиям семантики
  - [x] Разметка проходит валидацию на WC3.org
  - [x] Адаптировать под мобильный, планшетный и десктопный экраны
@@ -79,18 +79,18 @@ npm run start
 <button>[на верх :arrow_heading_up:](#logo)</button>
 </br>
 
-### <span style="color: #63d1bb">Контакты</span>
+### <span id="contacts" style="color: #63d1bb">Контакты</span>
 <div style="vertical-align: top;">
 <a href="https://vk.com/denv0lc">
 <img width="30" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/VK_Compact_Logo_(2021-present).svg"><span> Denis Volchkov</span></a> - Frontend Developer
 </div>
 </br>
 
-### <span style="color: #63d1bb">Лицензия</span> [MIT](./LICENSE)
+### <span id="licence" style="color: #63d1bb">Лицензия</span> [MIT](./LICENSE)
 <button>[на верх :arrow_heading_up:](#logo)</button>
 </br>
 
 ---
-### [<span style="color: #63d1bb">Источники</span>](#source)
+### <span id="source" style="color: #63d1bb">Источники</span>
 [<a href="https://htmlacademy.ru"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png">HTML Academy](https://htmlacademy.ru)
 разработала данный макет 
