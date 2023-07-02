@@ -1,4 +1,4 @@
-<h1 align="center">
+<h1 id="logo" align="center">
   <a href="https://denvolch.github.io/mishka/">
     <picture>
       <source media="(min-width: 1250px) and (prefers-color-scheme: dark)" srcset="https://denvolch.github.io/mishka/images/svg/mishka-logo-desktop--dark.svg" width="200">
@@ -44,7 +44,7 @@
  - [ ] Доступность
  - [x] Автоматизация сборки
 
-<button>[на верх :arrow_heading_up:](#содержание)</button>
+<button>[на верх :arrow_heading_up:](#logo)</button>
 </br>
 
 ### <span id="tech" style="color: #63d1bb">Технологии и инструменты</span>
@@ -76,7 +76,7 @@ npm run build
 ```node
 npm run start
 ```
-<button>[на верх :arrow_heading_up:](#содержание)</button>
+<button>[на верх :arrow_heading_up:](#logo)</button>
 </br>
 
 ### <span style="color: #63d1bb">Контакты</span>
@@ -87,7 +87,7 @@ npm run start
 </br>
 
 ### <span style="color: #63d1bb">Лицензия</span> [MIT](./LICENSE)
-<button>[на верх :arrow_heading_up:](#содержание)</button>
+<button>[на верх :arrow_heading_up:](#logo)</button>
 </br>
 
 ---
