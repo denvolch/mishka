@@ -4,9 +4,9 @@
   "description": "study project",
   "main": "index.html",
   "scripts": {
-    "gulp": "gulp",
+    "dev": "gulp",
     "build": "gulp build",
-    "watch": "gulp watch",
+    "start": "gulp watch",
     "stylelint": "npx stylelint \"**/*.scss\"",
     "stylelint-fix": "npx stylelint \"**/*.scss\" --fix"
   },
