@@ -19,6 +19,8 @@
         font-family: 'Open Sans', Arial, Helvetica, sans-serif;
         line-height: 24px;
 
+        cursor: pointer;
+
         &:not(:last-child) {
             margin-bottom: 30px;
         }
@@ -53,12 +55,9 @@
     }
 
 
-    &__item-link {
+    &__item-wrapper {
         display: flex;
         flex-wrap: wrap;
-
-        text-decoration: none;
-        color: inherit;
     }
 
 
@@ -143,7 +142,7 @@
             }
         }
 
-        &__item-link {
+        &__item-wrapper {
             display: flex;
         }
 
@@ -204,7 +203,7 @@
             margin-bottom: 0;
         }
 
-        &__item-link {
+        &__item-wrapper {
             flex-direction: column;
             justify-content: space-between;
             align-items: stretch;

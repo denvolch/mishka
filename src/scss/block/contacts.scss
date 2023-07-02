@@ -65,16 +65,14 @@
         position: absolute;
         bottom: 135px;
         left: calc(50% - 50vw);
-
-        width: 100vw;
-
-        img {
-            display: block;
-        }
     }
 
     &__map {
+        width: 100vw; 
+        height: 457px;
+
         font-size: 0;
+        border: 0;
     }
 }
 
@@ -186,6 +184,9 @@
 
         &__map-inner {
             position: static;
+        }
+
+        &__map {
             width: 525px;
         }
 
