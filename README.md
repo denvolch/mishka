@@ -1,4 +1,4 @@
-[<img height="24" src="https://img.shields.io/badge/valid-white?logo=w3c&logoColor=FFFFFF&label=validator&labelColor=444444&color=33c615">](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdenvolch.github.io%2Fmishka%2F) <img height="24" src="https://img.shields.io/badge/study-white?logoColor=FFFFFF&label=project&labelColor=444444&color=0c70d3"> <img height="24" src="https://img.shields.io/badge/used-white?logo=BEM&logoColor=FFFFFF&label=BEM%20methodology&labelColor=444444&color=dd8b0f">
+[<img src="https://img.shields.io/badge/valid-white?logo=w3c&logoColor=FFFFFF&label=validator&labelColor=444444&color=33c615">](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdenvolch.github.io%2Fmishka%2F) <img  src="https://img.shields.io/badge/study-white?logoColor=FFFFFF&label=project&labelColor=444444&color=0c70d3"> <img src="https://img.shields.io/badge/used-white?logo=BEM&logoColor=dd8b0f&label=BEM%20methodology&labelColor=444444&color=dd8b0f"> <img src="https://img.shields.io/badge/v9.6.0-white?logo=npm&logoColor=%23CB3837&label=npm&labelColor=444444&color=CB3837"> 
 
 
 <h1 id="logo" align="center">
