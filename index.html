@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Mishka</title>
+</head>
+<body class="page__container">
+    <header class="page__header header">
+        <nav class="header__nav menu menu--closed">
+            <button class="menu__toggle"><span class=" visual-hidden">Открыть меню</span></button>
+            <ul class="menu__list menu__list--site">
+                <li class="menu__item">
+                    <a href="catalog.html" class="menu__link">
+                        <span>Каталог товаров</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="form.html" class="menu__link">
+                        <span>Вязание на заказ</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="menu__item menu__item--logo">
+                <a class="menu__link">
+                    <picture>
+                        <source media="(min-width: 1250px)" srcset="images/svg/mishka-logo-desktop.svg" width="149">
+                        <source media="(min-width: 768px)" srcset="images/svg/mishka-logo-tablet.svg" width="113">
+                        <img src="images/svg/mishka-logo-mobile.svg" alt="" class="menu__logo-img" width="86" height="35">
+                    </picture>
+                </a>
+            </div>
+            <ul class="menu__list menu__list--user">
+                <li class="menu__item menu__item--search">
+                    <a href="#" class="menu__link">
+                        <svg class="menu__search-icon" viewBox="0 0 9 9" width="18" height="18">
+                            <use xlink:href="images/svg/sprite.svg#svg--search"></use>
+                        </svg>
+                        <span>Поиск по сайту</span>
+                    </a>
+                </li>
+                <li class="menu__item menu__item--cart">
+                    <a href="#" class="menu__link">
+                        <svg class="menu__cart-icon" viewBox="0 0 14 13" width="21" height="18">
+                            <use xlink:href="images/svg/sprite.svg#svg--cart"></use>
+                        </svg>
+                        <span>Корзина: пока пуста</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu__list menu__list--extra">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <span>Новые поступления</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <span>Распродажа</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section class="header__promo promo">
+            <div class="promo__wrapper">
+                <h1 class="header__title">Милые штуки <span>ручной</span> работы для дома</h1>
+                <ul class="promo__list">
+                    <li class="promo__item promo__item--interior">
+                        <a class="promo__link" href="#">
+                            <span>Предметы интерьера</span>
+                            <svg class="promo__interior-icon" viewBox="0 0 20 31" width="40" height="62">
+                                <use xlink:href="images/svg/sprite.svg#svg--interior"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="promo__item promo__item--toys">
+                        <a class="promo__link" href="#">
+                            <span>Детские игрушки</span>
+                            <svg class="promo__toys-icon" viewBox="0 0 10 10" width="60" height="60">
+                                <use xlink:href="images/svg/sprite.svg#svg--toys"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <main class="page__content">
+        <section class="featured">
+            <div class="featured__wrapper">
+                <div class="featured__title-inner">
+                    <h2 class="featured__title">Вязаные корзинки</h2>
+                    <span class="featured__subtitle">Товар недели</span>
+                </div>
+                <div class="featured__inner">
+                    <div class="featured__column-left">
+                        <p class="featured__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+                        <table class="featured__table">
+                            <tr>
+                                <td class="featured__table-key">Цвет:</td>
+                                <td class="featured__table-value">«Тиффани»/серый</td>
+                            </tr>
+                            <tr>
+                                <td class="featured__table-key">Диаметр:</td>
+                                <td class="featured__table-value">25 см</td>
+                            </tr>
+                            <tr>
+                                <td class="featured__table-key">Высота:</td>
+                                <td class="featured__table-value">15 см</td>
+                            </tr>
+                        </table>
+                        <span class="featured__price">Цена: 990 руб.</span>
+                        <button class="featured__button button">
+                            <span>Заказать</span>
+                        </button>
+                    </div>
+                    <div class="featured__photo-card">
+                        <a href="" class="featured__photo-link">
+                            <picture>
+                                <source media="(min-width: 1250px)" srcset="images/triple-set-desktop.webp" width="525" height="636">
+                                <source media="(min-width: 768px)" srcset="images/triple-set-tablet.webp" width="333" height="404">
+                                <img src="images/triple-set-mobile.webp" alt="" class="featured__photo" width="260" height="315">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="aboutus">
+            <h2 class="aboutus__title">Коротко о нас:</h2>
+            <div class="aboutus__list-inner">
+                <ul class="aboutus__column aboutus__column--left">
+                    <li class="aboutus__item aboutus__item--">
+                        <svg class="aboutus__icon icon-flower" width="32" height="37">
+                            <use xlink:href="images/svg/sprite.svg#svg--icon-flower"></use>
+                        </svg>
+                        <p class="aboutus__item-text">
+                            Экологически
+                            <span>чистые материалы</span>
+                        </p>
+                    </li>
+                    <li class="aboutus__item aboutus__item--dollar">
+                        <svg class="aboutus__icon icon-dollar" width="47" height="27">
+                            <use xlink:href="images/svg/sprite.svg#svg--icon-dollar"></use>
+                        </svg>
+                        <p class="aboutus__item-text">
+                            Скандинавский стиль
+                            <span>по российской цене</span>
+                        </p>
+                    </li>
+                    <li class="aboutus__item aboutus__item--heart">
+                        <svg class="aboutus__icon icon-heart" width="34" height="27">
+                            <use xlink:href="images/svg/sprite.svg#svg--icon-heart"></use>
+                        </svg>
+                        <p class="aboutus__item-text">
+                            Увеличивает лайки
+                            <span>на фотографиях</span>
+                        </p>
+                    </li>
+                </ul>
+                <ul class="aboutus__column aboutus__column--right">
+                    <li class="aboutus__item aboutus__item--clew">
+                        <svg class="aboutus__icon icon-clew" width="34" height="34">
+                            <use xlink:href="images/svg/sprite.svg#svg--icon-clew"></use>
+                        </svg>
+                        <p class="aboutus__item-text">
+                            Связано вручную с
+                            <span>любовью и умилением</span>
+                        </p>
+                    </li>
+                    <li class="aboutus__item aboutus__item--rocket">
+                        <svg class="aboutus__icon icon-rocket" width="55" height="23">
+                            <use xlink:href="images/svg/sprite.svg#svg--icon-rocket"></use>
+                        </svg>
+                        <p class="aboutus__item-text">
+                            Поддержка отечественного
+                            <span>производителя</span>
+                        </p>
+                    </li>
+                    <li class="aboutus__item aboutus__item--gift">
+                        <svg class="aboutus__icon icon-gift" width="32" height="32">
+                            <use xlink:href="images/svg/sprite.svg#svg--icon-gift"></use>
+                        </svg>
+                        <p class="aboutus__item-text">
+                            Поставляется в
+                            <span>подарочной упаковке</span>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="review">
+            <div class="review__wrapper">
+                <h2 class="review__title">Отзывы</h2>
+                <div class="review__slider slider">
+                    <ul class="slider__list">
+                        <li class="slider__item">
+                            <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+                            <p class="review__author">Анастасия Красильникова</p>
+                            <span class="review__author-mail">@misssssiskras</span>
+                        </li>
+                    </ul>
+                    <div class="slider__controls">
+                        <button class="slider__button slider__button--prev">
+                            <svg class="slidert__button-icon" width="50" height="26">
+                                <use xlink:href="images/svg/sprite.svg#svg--icon-arrow-prev"></use>
+                            </svg>
+                            <span style="display: none;">Предыдущий отзыв</span>
+                        </button>
+                        <button class="slider__button slider__button--next">
+                            <svg class="slidert__button-icon" width="50" height="26">
+                                <use xlink:href="images/svg/sprite.svg#svg--icon-arrow-next"></use>
+                            </svg>
+                            <span style="display: none;">Следущий отзыв</span>
+                        </button>
+                    </div>
+                </div>
+                <button class="review__button button">
+                    <span>Написать</span>
+                </button>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="contacts__wrapper">
+                <h2 class="contacts__title">Контакты</h2>
+                <div class="contacts__column-left">
+                    <table class="contacts__table">
+                        <tr>
+                            <td class="contacts__table-key">e-mail:</td>
+                            <td class="contacts__table-value contacts__table-value--mail">
+                                <a href="#">info@mimimishkashop.ru</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="contacts__table-key">адрес:</td>
+                            <td class="contacts__table-value">
+                                <span>г. Санкт-Петербург,</span>
+                                <span>ул. Большая Конюшенная,</span>
+                                <span>д. 19/8, офис 101</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <button class="contacts__button button">
+                        <span>Напишите нам</span>
+                    </button>
+                </div>
+                <div class="contacts__map-inner">
+                    <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.3046026829103!2d30.32344507737988!3d59.93862658271937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1687276827194!5m2!1sen!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page__footer footer">
+        <div class="footer__wrapper">
+            <a href="index.html" class="footer__logo logo">
+                <svg viewBox="0 0 51 17" width="102" height="34">
+                    <use xlink:href="images/svg/sprite.svg#svg--footer-logo"></use>
+                </svg>
+            </a>
+            <ul class="socials">
+                <li class="socials__item socials__item--insta">
+                    <a href="https://www.instagram.com/mishka-toymag" class="socials__link" aria-label="Instagram">
+                        <svg class="socials__icon socials__icon--insta" viewBox="0 0 22 21" width="22" height="21">
+                            <use xlink:href="images/svg/sprite.svg#svg--icon-insta"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item socials__item--facebook">
+                    <a href="https://www.facebook.com/mishka-toymag" class="socials__link" aria-label="Facebook">
+                        <svg class="socials__icon socials__icon--facebook" viewBox="0 0 15 28" width="15" height="28">
+                            <use xlink:href="images/svg/sprite.svg#svg--icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="socials__item socials__item--twitter">
+                    <a href="https://twitter.com/mishkaToyMag" class="socials__link" aria-label="Twitter">
+                        <svg class="socials__icon socials__icon--twitter" viewBox="0 0 23 20" width="23" height="20">
+                            <use xlink:href="images/svg/sprite.svg#svg--icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="copyright">
+                <a href="https://htmlacademy.ru" class="copyright__link">
+                    <span>Разработано</span>
+                    <svg class="copyright__icon" viewBox="0 0 27 34" width="27" height="34">
+                        <use xlink:href="images/svg/sprite.svg#svg--icon-htmlacademy"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal modal--closed">
+        <div class="modal__wrapper">
+            <button class="modal__close-btn">Закрыть</button>
+            <h2 class="modal__title title">Добавить в корзину</h2>
+            <p class="modal__descr">Выберите размер:</p>
+            <div class="modal__footer">
+                <ul class="modal__list">
+                    <li class="modal__item">
+                        <input class="modal__checkbox" type="checkbox" name="size-S" id="s">
+                        <label for="s" class="modal__label modal__label--s">S</label>
+                    </li>
+                    <li class="modal__item">
+                        <input class="modal__checkbox" type="checkbox" name="size-M" id="m">
+                        <label for="m" class="modal__label modal__label--m">M</label>
+                    </li>
+                    <li class="modal__item">
+                        <input class="modal__checkbox" type="checkbox" name="size-L" id="l">
+                        <label for="l" class="modal__label modal__label--l">L</label>
+                    </li>
+                </ul>
+                <button class="modal__button button">
+                    <span>Добавить</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="./js/burgerToggle.js"></script>
+    <script defer src="./js/modalToggle.js"></script>
+</body>
+</html>
