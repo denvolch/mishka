@@ -1,3 +1,6 @@
+[<img height="24" src="https://img.shields.io/badge/valid-white?logo=w3c&logoColor=FFFFFF&label=validator&labelColor=444444&color=33c615">](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdenvolch.github.io%2Fmishka%2F) <img height="24" src="https://img.shields.io/badge/study-white?logoColor=FFFFFF&label=project&labelColor=444444&color=0c70d3"> <img height="24" src="https://img.shields.io/badge/used-white?logo=BEM&logoColor=FFFFFF&label=BEM%20methodology&labelColor=444444&color=dd8b0f">
+
+
 <h1 id="logo" align="center">
   <a href="https://denvolch.github.io/mishka/">
     <picture>
