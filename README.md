@@ -15,25 +15,24 @@
 Адаптивный и отзывчиввый дизайн реализован силами HTML и CSS. Особенностью проекта является ассиметричное меню навигации в шапке сайта, адпатированное под мобильную планшетную и десктопную версии.
 </br>
 
-### <span style="color: #63d1bb">Содержание</span>
+## <span style="color: #63d1bb">Содержание</span>
   
-+ [<span style="color: #63d1bb">Сайт</span>](./README.md#Сайт)
-+ [<span style="color: #63d1bb">Задачи</span>](./README.md#tasks)
-+ [<span style="color: #63d1bb">Технлогии и инструменты</span>](./README.md#технологии)
-+ [<span style="color: #63d1bb">Как использовать</span>](./README.md#start)
-+ [<span style="color: #63d1bb">контакты</span>](./README.md#контакты)
-+ [<span style="color: #63d1bb">Источники</span>](./README.md#source)
-+ [<span style="color: #63d1bb">Лицензия</span>](./README.md#licence)
++ [<span style="color: #63d1bb">Сайт</span>](md#Сайт)
++ [<span style="color: #63d1bb">Задачи</span>](#Задачи)
++ [<span style="color: #63d1bb">Технлогии и инструменты</span>](#технологии)
++ [<span style="color: #63d1bb">Как использовать</span>](#Как использовать)
++ [<span style="color: #63d1bb">контакты</span>](#контакты)
++ [<span style="color: #63d1bb">Лицензия</span>](#Лицензия)
++ [<span style="color: #63d1bb">Источники</span>](#Источники)
 </br>
 
 
-#### <span style="color: #63d1bb">Сайт</span>
+### <span style="color: #63d1bb">Сайт</span>
 Выможете подробнее ознакомиться с сайтом, перейдя по ссылке <a href="https://denvolch.github.io/mishka/" title="https://denvolch.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="https://denvolch.github.io/mishka/images/svg/mishka-logo-mobile--dark.svg" width="50"><img src="https://denvolch.github.io/mishka/images/svg/mishka-logo-mobile.svg" width="50"></picture></a>
-<button>[на верх :arrow_heading_up:](#содержание)</button>
 </br>
 
 
-#### <span style="color: #63d1bb">Задачи</span>
+### <span style="color: #63d1bb">Задачи</span>
  - [x] Соотвествие требованиям семантики
  - [x] Разметка проходит валидацию на WC3.org
  - [x] Адаптировать под мобильный, планшетный и десктопный экраны
@@ -48,7 +47,7 @@
 <button>[на верх :arrow_heading_up:](#содержание)</button>
 </br>
 
-#### <span style="color: #63d1bb">Технологии и инструменты</span>
+### <span style="color: #63d1bb">Технологии и инструменты</span>
 <div>
     <img style="width: 2rem" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML5"/>
     <img style="width: 2rem" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS3"/>
@@ -61,11 +60,10 @@
     <img style="width: 2rem" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" title="VS Code"/>
     <img style="width: 2rem" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" title="Node.js"/>
 </div>
-
-<button>[на верх :arrow_heading_up:](#содержание)</button>
+<br/>    
 <br/>    
 
-#### <span style="color: #63d1bb">Как использовать</span>
+### <span style="color: #63d1bb">Как использовать</span>
 После клонирования или загрузки проекта, перейдите в папку проекта и выполните команду в терминале
 ```node
 npm install
@@ -81,18 +79,18 @@ npm run start
 <button>[на верх :arrow_heading_up:](#содержание)</button>
 </br>
 
-#### <span style="color: #63d1bb">Контакты</span>
+### <span style="color: #63d1bb">Контакты</span>
 <div style="vertical-align: top;">
 <a href="https://vk.com/denv0lc">
 <img width="30" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/VK_Compact_Logo_(2021-present).svg"><span> Denis Volchkov</span></a> - Frontend Developer
 </div>
 </br>
 
-#### <span style="color: #63d1bb">Лицензия</span> [MIT](./LICENSE)
+### <span style="color: #63d1bb">Лицензия</span> [MIT](./LICENSE)
 <button>[на верх :arrow_heading_up:](#содержание)</button>
 </br>
 
 ---
-#### [<span style="color: #63d1bb">Источники</span>](#source)
+### [<span style="color: #63d1bb">Источники</span>](#source)
 [<a href="https://htmlacademy.ru"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png">HTML Academy](https://htmlacademy.ru)
 разработала данный макет 
