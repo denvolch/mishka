@@ -19,8 +19,8 @@
   
 + [<span style="color: #63d1bb">Сайт</span>](md#Сайт)
 + [<span style="color: #63d1bb">Задачи</span>](#Задачи)
-+ [<span style="color: #63d1bb">Технлогии и инструменты</span>](#Технологии)
-+ [<span style="color: #63d1bb">Как использовать</span>](#Как)
++ [<span style="color: #63d1bb">Технологии и инструменты</span>](#tech)
++ [<span style="color: #63d1bb">Как использовать</span>](#start)
 + [<span style="color: #63d1bb">контакты</span>](#контакты)
 + [<span style="color: #63d1bb">Лицензия</span>](#Лицензия)
 + [<span style="color: #63d1bb">Источники</span>](#Источники)
@@ -47,7 +47,7 @@
 <button>[на верх :arrow_heading_up:](#содержание)</button>
 </br>
 
-### <span style="color: #63d1bb">Технологии и инструменты</span>
+### <span id="tech" style="color: #63d1bb">Технологии и инструменты</span>
 <div>
     <img style="width: 2rem" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML5"/>
     <img style="width: 2rem" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS3"/>
@@ -63,7 +63,7 @@
 <br/>    
 <br/>    
 
-### <span style="color: #63d1bb">Как использовать</span>
+### <span id="start" style="color: #63d1bb">Как использовать</span>
 После клонирования или загрузки проекта, перейдите в папку проекта и выполните команду в терминале
 ```node
 npm install
