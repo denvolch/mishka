@@ -1,5 +1,4 @@
-[<img src="https://img.shields.io/badge/valid-white?logo=w3c&logoColor=FFFFFF&label=validator&labelColor=444444&color=33c615">](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdenvolch.github.io%2Fmishka%2F) <img  src="https://img.shields.io/badge/study-white?logoColor=FFFFFF&label=project&labelColor=444444&color=0c70d3"> <img src="https://img.shields.io/badge/used-white?logo=BEM&logoColor=dd8b0f&label=BEM%20methodology&labelColor=444444&color=dd8b0f"> <img src="https://img.shields.io/badge/v9.6.0-white?logo=npm&logoColor=%23CB3837&label=npm&labelColor=444444&color=CB3837"> 
-
+[<img src="https://img.shields.io/badge/valid-white?logo=w3c&logoColor=FFFFFF&label=validator&labelColor=444444&color=33c615">](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdenvolch.github.io%2Fmishka%2F) <img  src="https://img.shields.io/badge/study-white?logoColor=FFFFFF&label=project&labelColor=444444&color=0c70d3"> <img src="https://img.shields.io/badge/used-white?logo=BEM&logoColor=dd8b0f&label=BEM%20methodology&labelColor=444444&color=dd8b0f"> <img src="https://img.shields.io/badge/v9.6.0-white?logo=npm&logoColor=%23CB3837&label=npm&labelColor=444444&color=CB3837"> [<img title="Readme in English translation" width="80" align="right" src="https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_the_United_Kingdom.png">](./README-en.md)
 
 <h1 id="logo" align="center">
   <a href="https://denvolch.github.io/mishka/">
@@ -14,8 +13,8 @@
   </a>
 </h1>
 
-<span style="color: #63d1bb"><b><i>Mishka</i></b></span> - это интернет-магазин творческой студии, по созданию игрушек и предметов интерьера (учебный проект по верстке)
-Адаптивный и отзывчиввый дизайн реализован силами HTML и CSS. Особенностью проекта является ассиметричное меню навигации в шапке сайта, адпатированное под мобильную планшетную и десктопную версии.
+<b style="color: #63d1bb"><i>Mishka</i></b> - это интернет-магазин творческой студии, по созданию игрушек и предметов интерьера (учебный проект по верстке).
+Адаптивный и отзывчиввый дизайн реализован силами HTML и CSS под мобильную планшетную и десктопную версии.. Особенностью проекта является ассиметричное меню навигации в шапке сайта.
 </br>
 
 ## <span style="color: #63d1bb">Содержание</span>
@@ -24,22 +23,22 @@
 + [<span style="color: #63d1bb">Задачи</span>](#tasks)
 + [<span style="color: #63d1bb">Технологии и инструменты</span>](#tech)
 + [<span style="color: #63d1bb">Как использовать</span>](#start)
-+ [<span style="color: #63d1bb">контакты</span>](#contacts)
++ [<span style="color: #63d1bb">Контакты</span>](#contacts)
 + [<span style="color: #63d1bb">Лицензия</span>](#licence)
 + [<span style="color: #63d1bb">Источники</span>](#source)
 </br>
 
 
-### <span id="site" style="color: #63d1bb">Сайт</span>
-Выможете подробнее ознакомиться с сайтом, перейдя по ссылке <a href="https://denvolch.github.io/mishka/" title="https://denvolch.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="https://denvolch.github.io/mishka/images/svg/mishka-logo-mobile--dark.svg" width="50"><img src="https://denvolch.github.io/mishka/images/svg/mishka-logo-mobile.svg" width="50"></picture></a>
+### :globe_with_meridians: <span id="site" style="color: #63d1bb">Сайт</span>
+Вы можете подробнее ознакомиться с сайтом, перейдя по ссылке <a href="https://denvolch.github.io/mishka/" title="https://denvolch.github.io"><picture><source media="(prefers-color-scheme: dark)" srcset="https://denvolch.github.io/mishka/images/svg/mishka-logo-mobile--dark.svg" width="50"><img src="https://denvolch.github.io/mishka/images/svg/mishka-logo-mobile.svg" width="50"></picture></a>
 </br>
 
 
-### <span id="tasks" style="color: #63d1bb">Задачи</span>
- - [x] классы по БЭМ
+### 📝 <span id="tasks" style="color: #63d1bb">Задачи</span>
+ - [x] Классы по БЭМ
  - [x] Соотвествие требованиям семантики
  - [x] Разметка проходит валидацию на [w3.org](https://validator.w3.org/)
- - [x] Адаптировать под мобильный, планшетный и десктопный экраны
+ - [x] Адаптирован под мобильный, планшетный и десктопный экраны
  - [x] Резиновый дизайн на переходах
  - [x] Кроссбраузерность 
  - [x] Кадрирование контентных изображений
@@ -51,7 +50,7 @@
 <button>[на верх :arrow_heading_up:](#logo)</button>
 </br>
 
-### <span id="tech" style="color: #63d1bb">Технологии и инструменты</span>
+### :hammer_and_wrench:  <span id="tech" style="color: #63d1bb">Технологии и инструменты</span>
 <div>
     <img style="width: 2rem" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" title="HTML5"/>
     <img style="width: 2rem" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" title="CSS3"/>
@@ -67,7 +66,7 @@
 <br/>    
 <br/>    
 
-### <span id="start" style="color: #63d1bb">Как использовать</span>
+### :computer: <span id="start" style="color: #63d1bb">Как использовать</span>
 После клонирования или загрузки проекта, перейдите в папку проекта и выполните команду в терминале
 ```node
 npm install
@@ -83,18 +82,18 @@ npm run start
 <button>[на верх :arrow_heading_up:](#logo)</button>
 </br>
 
-### <span id="contacts" style="color: #63d1bb">Контакты</span>
+### :mailbox_with_mail: <span id="contacts" style="color: #63d1bb">Контакты</span>
 <div style="vertical-align: top;">
 <a href="https://vk.com/denv0lc">
 <img width="30" src="https://upload.wikimedia.org/wikipedia/commons/f/f3/VK_Compact_Logo_(2021-present).svg"><span> Denis Volchkov</span></a> - Frontend Developer
 </div>
 </br>
 
-### <span id="licence" style="color: #63d1bb">Лицензия</span> [MIT](./LICENSE)
+### :scroll: <span id="licence" style="color: #63d1bb">Лицензия</span> [MIT](./LICENSE)
 <button>[на верх :arrow_heading_up:](#logo)</button>
 </br>
 
 ---
-### <span id="source" style="color: #63d1bb">Источники</span>
+### :gear: <span id="source" style="color: #63d1bb">Источники</span>
 [<a href="https://htmlacademy.ru"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/adaptive/logo-for-github-2.png">HTML Academy](https://htmlacademy.ru)
-разработала данный макет 
+разработала данный макет.
